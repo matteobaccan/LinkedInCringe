@@ -1,22 +1,4 @@
-```
-              L I N K E D I N
- ██████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
-██╔════╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
-██║     ██████╔╝██║██╔██╗ ██║██║  ███╗█████╗
-██║     ██╔══██╗██║██║╚██╗██║██║   ██║██╔══╝
-╚██████╗██║  ██║██║██║ ╚████║╚██████╔╝███████╗
- ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
-──────────────────────────────────────────────
- Un post.
-
- Una morale.
-
- Nessun rapporto tra le due.
-
-                             Sei d'accordo? 👇
- #mindset #leadership #grateful #hustle
-──────────────────────────────────────────────
-```
+<img src="assets/banner.svg" width="560" alt="LINKEDIN CRINGE — Un post. Una morale. Nessun rapporto tra le due. Sei d'accordo? 👇 #mindset #leadership #grateful #hustle">
 
 # LinkedIn Cringe
 
@@ -219,6 +201,7 @@ più di un commento su dieci cita la scenetta di riferimento.
         ├── classificazione.md      criteri creduto/colto, toni, categorie
         └── report.md               struttura del report e regole di consegna
 analisi/                            i report prodotti (anonimizzati)
+assets/                             banner del README
 ```
 
 ## Installazione
@@ -298,6 +281,33 @@ I nomi sono sempre di fantasia. È satira, non impersonificazione.
 La skill di analisi, dal canto suo: **anonimizza sempre i commentatori** nei
 report, giudica i commenti e mai le persone, tiene i dati grezzi fuori dal
 repository e si limita a leggere un thread pubblico.
+
+## Manda il tuo cringe
+
+Il catalogo migliora coi dati veri, e i dati veri li avete voi: il post del
+fuffaguru che vi ha fatto chiudere l'app, il recruiter-filosofo, quello che
+avete scritto voi nel 2019 e che ancora vi sveglia di notte.
+
+**Mandatecelo.** Aprite una
+[issue](https://github.com/matteobaccan/LinkedInCringe/issues) con il testo
+del post, o direttamente una PR su `esempi.md`. Regole di ingaggio:
+
+- **anonimizzato**: niente nomi reali, niente aziende riconoscibili, niente
+  screenshot con foto profilo — il paletto qui sopra vale anche all'incontrario;
+- diteci se è **trovato in natura o scritto da voi** (non giudichiamo, anzi:
+  il cringe autoprodotto consapevole è ricerca);
+- se vi va, azzardate **livello 1-10 e moduli** che ci vedete: se il post non
+  rientra in nessuno dei 33, potreste aver appena scoperto il C34.
+
+I migliori finiscono negli esempi del progetto, i pattern nuovi diventano
+moduli del catalogo. Il vostro imbarazzo non andrà sprecato.
+
+## Ringraziamenti
+
+A [**Maicol Pirozzi**](https://youtube.com/playlist?list=PLCj24iwop8vijRvocuUO85rEqRU4-o2Mv) e alla community di
+[r/LinkedInCringeIT](https://www.reddit.com/r/LinkedInCringeIT/), per le
+infinite ispirazioni: il catalogo dei moduli deve molto al materiale che
+LinkedIn produce ogni giorno e che loro, instancabili, raccolgono.
 
 ## Licenza
 
