@@ -1,0 +1,22 @@
+name: Link check
+
+on:
+  push:
+    paths:
+      - "**/*.md"
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links in markdown
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # 403/429/999: LinkedIn, Reddit e YouTube rispondono così ai bot
+          # pur avendo il contenuto raggiungibile da browser
+          args: --no-progress --accept "200..=206,403,429,999" "**/*.md"
+          fail: true

@@ -1,5 +1,7 @@
 <img src="assets/banner.svg" width="560" alt="LINKEDIN CRINGE — Un post. Una morale. Nessun rapporto tra le due. Sei d'accordo? 👇 #mindset #leadership #grateful #hustle">
 
+🇬🇧 [English version](README.en.md)
+
 # LinkedIn Cringe
 
 Due skill per Claude Code, una coppia che si chiude a cerchio:
@@ -202,6 +204,7 @@ più di un commento su dieci cita la scenetta di riferimento.
         └── report.md               struttura del report e regole di consegna
 analisi/                            i report prodotti (anonimizzati)
 assets/                             banner del README
+community/                          i post cringe accettati dalla community
 ```
 
 ## Installazione
@@ -299,8 +302,9 @@ del post, o direttamente una PR su `esempi.md`. Regole di ingaggio:
 - se vi va, azzardate **livello 1-10 e moduli** che ci vedete: se il post non
   rientra in nessuno dei 33, potreste aver appena scoperto il C34.
 
-I migliori finiscono negli esempi del progetto, i pattern nuovi diventano
-moduli del catalogo. Il vostro imbarazzo non andrà sprecato.
+I post accettati finiscono in [`community/`](community/), i migliori negli
+esempi della skill, e i pattern nuovi diventano moduli del catalogo. Il
+vostro imbarazzo non andrà sprecato.
 
 ## Ringraziamenti
 

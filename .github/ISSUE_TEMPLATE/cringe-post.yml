@@ -1,0 +1,54 @@
+name: Manda il tuo cringe
+description: Proponi un post LinkedIn cringe come esempio per il progetto
+title: "[cringe] "
+labels: ["cringe-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Prima di incollare, **anonimizza**: niente nomi reali, niente
+        aziende riconoscibili, niente screenshot con foto profilo. È satira,
+        non gogna.
+  - type: textarea
+    id: testo
+    attributes:
+      label: Il post
+      description: Il testo completo, già anonimizzato. Se serve, sostituisci i nomi con equivalenti di fantasia.
+      placeholder: "Tre anni fa non sapevo nemmeno cosa fosse un CRM…"
+    validations:
+      required: true
+  - type: dropdown
+    id: origine
+    attributes:
+      label: Origine
+      description: Non giudichiamo, anzi — il cringe autoprodotto consapevole è ricerca.
+      options:
+        - Trovato in natura
+        - Scritto da me, consapevolmente
+        - Scritto da me, all'epoca ci credevo
+    validations:
+      required: true
+  - type: input
+    id: livello
+    attributes:
+      label: Livello stimato (1-10)
+      description: Facoltativo. La scala è in references/tassonomia.md.
+      placeholder: "es. 7"
+  - type: input
+    id: moduli
+    attributes:
+      label: Moduli che ci vedi (C01-C33)
+      description: Facoltativo. Il catalogo è in references/moduli.md. Se non rientra in nessuno, scrivilo — potrebbe essere il C34.
+      placeholder: "es. C02, C21 — oppure: nessuno, candidato C34"
+  - type: textarea
+    id: contesto
+    attributes:
+      label: Contesto
+      description: Facoltativo — reazioni che ha generato, dove l'hai visto, perché ti ha colpito.
+  - type: checkboxes
+    id: regole
+    attributes:
+      label: Regole di ingaggio
+      options:
+        - label: Ho anonimizzato il post — niente nomi reali, aziende riconoscibili o foto profilo
+          required: true
