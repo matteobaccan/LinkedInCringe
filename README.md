@@ -193,13 +193,13 @@ per davvero, hanno dato questi numeri:
 
 | Post | Età | Impressioni | Creduloni | Svegli |
 |---|---|---|---|---|
-| la sedia | 1 giorno | ~122.000 | **36,0%** | 56,8% |
-| Athos, le 5:41 | 8 ore | ~24.600 | 8,3% | **86,1%** |
+| A (livello 7, virale) | 1 giorno | sei cifre | **~36%** | ~57% |
+| B (livello 9, recente) | 8 ore | cinque cifre | ~8% | **~86%** |
 
 La differenza non è nel testo: è nel pubblico. Nelle prime ore commenta la
 cerchia che conosce il gioco; i creduloni arrivano con la viralità. Bonus
-statistico: sul post della sedia, il 13,4% dei commenti citava la "cadrega" di
-Aldo, Giovanni e Giacomo.
+statistico: quando nel post compare un oggetto con un'àncora comica nazionale,
+più di un commento su dieci cita la scenetta di riferimento.
 
 ## Struttura
 
