@@ -1,6 +1,6 @@
 ---
 name: linkedin-cringe
-description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), credibilità (deve passare per vero / parodia dichiarata) e moduli cringe scelti da un catalogo di 31. Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, oppure vuole parodiare lo stile LinkedIn.
+description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), credibilità (deve passare per vero / parodia dichiarata) e moduli cringe scelti da un catalogo di 33. Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, oppure vuole parodiare lo stile LinkedIn.
 ---
 
 # LinkedIn Cringe: generatore di post
@@ -109,6 +109,11 @@ Consulta `references/esempi.md` per sentire come suonano i livelli 4, 7, 9 e 10.
 Mostra il post in un blocco di codice, così si copia-incolla senza che il markdown
 mangi la formattazione, poi in due righe elenca i moduli usati con i loro codici.
 
+Dopo i moduli, proponi il **prompt per l'immagine del post**, in un suo blocco di
+codice, costruito con le regole della sezione *Immagini* qui sotto. Se per quel
+post l'immagine è una cattiva idea (capita: sotto il livello 5 spesso il post vero
+non ne ha), dillo e proponi di pubblicare senza.
+
 Chiudi sempre offrendo un giro successivo: alzare o abbassare il livello, cambiare voce,
 rigenerare con altri moduli.
 
@@ -140,6 +145,51 @@ Il modulo `C12` (sapore-AI) è l'unica eccezione, ed è opt-in: si usa quando si
 ritrarre *l'umano che copia-incolla dall'AI senza accorgersene*. Anche lì i cliché vanno
 inseriti dentro un testo che per il resto suona umano, mai al posto suo.
 
+## Immagini
+
+Collaudato sul campo con la skill gemella `linkedin-cringe-analytics`:
+**la foto è il punto dove la finzione crolla per prima.** Un testo di livello 7
+regge il registro credibile, ma un'immagine generata viene smontata nei commenti
+in poche ore: scritte storpiate sui cartelli, abbigliamento fuori stagione, luce
+incoerente con l'orario dichiarato nel post.
+
+Se il post prevede un'immagine, in registro credibile:
+
+- meglio nessuna immagine, o una foto vera e banale (una scrivania, una tazza);
+- se l'immagine è generata: **niente testo leggibile in scena** (i lettori fanno
+  zoom sui cartelli), e coerenza con i fatti del post: stagione, ora e luce,
+  abbigliamento, oggetti citati nel testo;
+- prima di consegnare, riguarda l'immagine come un commentatore logico-forense:
+  è il filone di commenti più rapido a nascere.
+
+In registro parodico o ai livelli 9-10 vale l'inverso: l'incongruenza fotografica
+intenzionale è un'esca eccellente (C24), e i commenti che la smontano fanno parte
+dello spettacolo.
+
+### Il prompt d'immagine
+
+In consegna la skill propone sempre un prompt pronto per un generatore di immagini.
+Regole di costruzione:
+
+- **In inglese** (i generatori rendono meglio), con una riga in italiano che dice
+  cosa raffigura e perché è coerente col post.
+- **Estetica da foto vera, non da foto bella**: chiedi "smartphone photo, slightly
+  tilted framing, harsh office lighting, mundane, candid". Mai "professional
+  photography, cinematic, 8k": la foto patinata tradisce quanto il cartello storpiato.
+- **Vietato il testo in scena**: niente insegne, cartelli, badge leggibili, schermi
+  con scritte. Metti l'esclusione nel prompt stesso ("no text, no signs, no logos,
+  no readable writing anywhere"). Trucco utile: l'oggetto con testo si mostra girato
+  o fuori fuoco.
+- **Coerenza con i fatti del post**: stagione, ora e luce, abbigliamento, meteo,
+  oggetti citati. Se il post dice "le 5:41", la luce è quella delle 5:41 in quella
+  stagione. I commentatori controllano davvero.
+- **Soggetto**: il dettaglio banale o l'oggetto-esca, mai la scena madre. La sedia
+  vuota, non il colloquio; la tazza, non la riunione. Niente persone riconoscibili:
+  se serve una figura, di spalle o mani soltanto.
+- Ai livelli 9-10 o in registro parodico, ribalta: un'incongruenza visiva piantata
+  (C24 o C32 fotografico) è legittima e va dichiarata all'utente.
+- Chiudi il prompt con l'aspect ratio (4:5 o 1:1, i formati del feed).
+
 ## Riga finale di disclaimer
 
 **Dopo gli hashtag, sempre**, separata da una riga vuota, aggiungi una riga che riveli lo
@@ -153,6 +203,12 @@ contenuto del post (è più divertente di una formula generica).
 
 Questa riga è l'unico punto in cui la voce può ammiccare. Il corpo del post sopra di essa
 resta rigorosamente serio: se l'ironia risale dentro il testo, il cringe si spegne.
+
+**Dati di collaudo:** il muro di hashtag seppellisce il disclaimer davvero: su un
+post virale, un commentatore su tre ci ha creduto nonostante la riga finale. Una
+formulazione specifica sul contenuto, con un link, viene invece letta, citata e
+persino usata dai lettori nei thread. Entrambi gli esiti sono legittimi: scegli
+quanto in profondità seppellirla in base a quanto vuoi che lo scherzo si sveli.
 
 Quando consegni, di' all'utente in mezza riga che quella è la riga rimovibile.
 

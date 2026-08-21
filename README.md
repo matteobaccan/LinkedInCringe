@@ -1,40 +1,44 @@
 ```
-      ██╗     ██╗███╗   ██╗██╗  ██╗███████╗██████╗ ██╗███╗   ██╗
-      ██║     ██║████╗  ██║██║ ██╔╝██╔════╝██╔══██╗██║████╗  ██║
-      ██║     ██║██╔██╗ ██║█████╔╝ █████╗  ██║  ██║██║██╔██╗ ██║
-      ██║     ██║██║╚██╗██║██╔═██╗ ██╔══╝  ██║  ██║██║██║╚██╗██║
-      ███████╗██║██║ ╚████║██║  ██╗███████╗██████╔╝██║██║ ╚████║
-      ╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═══╝
+              L I N K E D I N
+ ██████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+██╔════╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+██║     ██████╔╝██║██╔██╗ ██║██║  ███╗█████╗
+██║     ██╔══██╗██║██║╚██╗██║██║   ██║██╔══╝
+╚██████╗██║  ██║██║██║ ╚████║╚██████╔╝███████╗
+ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+──────────────────────────────────────────────
+ Un post.
 
-             ██████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
-            ██╔════╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
-            ██║     ██████╔╝██║██╔██╗ ██║██║  ███╗█████╗
-            ██║     ██╔══██╗██║██║╚██╗██║██║   ██║██╔══╝
-            ╚██████╗██║  ██║██║██║ ╚████║╚██████╔╝███████╗
-             ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+ Una morale.
 
-      ──────────────────────────────────────────────────────────
-       Un post.
+ Nessun rapporto tra le due.
 
-       Una morale.
-
-       Nessun rapporto tra le due.
-
-                                          Sei d'accordo? 👇
-       #mindset #leadership #crescitapersonale #grateful #hustle
-      ──────────────────────────────────────────────────────────
+                             Sei d'accordo? 👇
+ #mindset #leadership #grateful #hustle
+──────────────────────────────────────────────
 ```
 
 # LinkedIn Cringe
 
-Una skill per Claude Code che genera post LinkedIn cringe in italiano, quelli veri,
-quelli che vengono screenshottati e girati nelle chat.
+Due skill per Claude Code, una coppia che si chiude a cerchio:
 
-Non genera "post brutti". Genera **imbarazzo vicario**: post in cui chi scrive ci crede
-davvero, rivendica una profondità che il testo non ha, e sta vendendo qualcosa fingendo
-di non vendere nulla.
+- **`linkedin-cringe`** genera post LinkedIn cringe in italiano, quelli veri,
+  quelli che vengono screenshottati e girati nelle chat;
+- **`linkedin-cringe-analytics`** scarica i commenti del post una volta
+  pubblicato e misura cosa è successo: quanti ci hanno creduto, quanti hanno
+  colto lo scherzo, la top ten per gradimento, i toni, il cringe involontario
+  dei commenti stessi.
 
-## Cosa chiede
+Quello che la seconda skill scopre finisce nei moduli della prima: il catalogo
+si migliora coi dati veri, non con le opinioni.
+
+La skill di generazione non produce "post brutti". Produce **imbarazzo
+vicario**: post in cui chi scrive ci crede davvero, rivendica una profondità
+che il testo non ha, e sta vendendo qualcosa fingendo di non vendere nulla.
+
+## La skill di generazione
+
+### Cosa chiede
 
 Quando la invochi senza parametri, la skill ti fa quattro domande:
 
@@ -43,14 +47,15 @@ Quando la invochi senza parametri, la skill ti fa quattro domande:
 | **Livello di cringe** | 4 lieve · 7 imbarazzante · 9 insostenibile · 10 leggendario |
 | **Credibilità** | credibile (deve passare per vero) · parodico (satira dichiarata) |
 | **Voce** | fuffaguru · founder/CEO · HR/recruiter · boomer con consiglio |
-| **Moduli cringe** | scelta multipla da un catalogo di 31 moduli (`C01`…`C31`) |
+| **Moduli cringe** | scelta multipla da un catalogo di 33 moduli (`C01`…`C33`) |
 
-Se invece scrivi già tutto nella richiesta (`post livello 9, credibile, tema smart working,
-moduli C19 e C02`), salta le domande e genera direttamente.
+Se invece scrivi già tutto nella richiesta (`post livello 9, credibile, tema
+smart working, moduli C19 e C02`), salta le domande e genera direttamente.
 
-## Il catalogo dei moduli
+### Il catalogo dei moduli
 
-31 moduli codificati in [`references/moduli.md`](.claude/skills/linkedin-cringe/references/moduli.md),
+33 moduli codificati in
+[`references/moduli.md`](.claude/skills/linkedin-cringe/references/moduli.md),
 divisi in narrativi, retorici e formali. Alcuni esempi:
 
 - `C01` parabola forzata, il caffè che diventa una lezione sul senso del lavoro
@@ -62,42 +67,55 @@ divisi in narrativi, retorici e formali. Alcuni esempi:
 - `C19` l'artigiano-parabola, il panettiere che dice una frase millenaria
 - `C21` broetry, una frase per riga, il white space che simula gravitas
 - `C30` lead-gen mascherata, il P.S. che smentisce tutto il post
+- `C32` l'errore piantato, l'impossibilità logica lasciata lì come esca
+- `C33` il nervo scoperto, l'errore di prassi che i professionisti correggeranno
 
-## Lingue
+Gli ultimi due sono nati dall'analisi sul campo: `C32` dall'osservazione che la
+sedia rimessa a posto *prima di alzarsi* ha generato thread interi, `C33` dal
+fatto che il 13% dei commenti a un post virale erano correzioni serissime sulla
+RAL. Chi ti corregge ti ha creduto.
 
-Il default è l'italiano, ma il cringe non è un fenomeno italiano: cambia il rivestimento,
-non il meccanismo. Chiedendo un post in un'altra lingua, la skill **rigenera dai moduli**
-invece di tradurre (un post tradotto suona tradotto, e smette di essere credibile).
+### Lingue
 
-Restano invariati la definizione, la scala e la struttura; vengono sostituiti lo strato di
-gergo contaminato (in italiano l'itanglese, in inglese il buzzword corporate, in tedesco il
-Denglisch…), gli hashtag, e i quattro moduli a radice culturale (`C14` `C15` `C19` `C26`),
-che vanno riscritti sul mercato del lavoro locale. Dettagli in
+Il default è l'italiano, ma il cringe non è un fenomeno italiano: cambia il
+rivestimento, non il meccanismo. Chiedendo un post in un'altra lingua, la skill
+**rigenera dai moduli** invece di tradurre (un post tradotto suona tradotto, e
+smette di essere credibile).
+
+Restano invariati la definizione, la scala e la struttura; vengono sostituiti
+lo strato di gergo contaminato (in italiano l'itanglese, in inglese il buzzword
+corporate, in tedesco il Denglisch…), gli hashtag, e i quattro moduli a radice
+culturale (`C14` `C15` `C19` `C26`), che vanno riscritti sul mercato del lavoro
+locale. Dettagli in
 [`references/lessico.md`](.claude/skills/linkedin-cringe/references/lessico.md).
 
-## Riga finale
+### Riga finale
 
-Ogni post generato finisce, dopo gli hashtag, con una riga che rivela lo scherzo
-("Hai letto fino a qui e volevi uccidermi? Non farlo, è semplicemente ironia."). La
-formulazione cambia ogni volta e, quando possibile, riprende un dettaglio del post.
-È l'unico punto in cui la voce ammicca: il corpo sopra resta serio, altrimenti il cringe
-si spegne. Sta all'utente decidere se tenerla o cancellarla prima di pubblicare.
+Ogni post generato finisce, dopo gli hashtag, con una riga che rivela lo
+scherzo. La formulazione cambia ogni volta e, quando possibile, riprende un
+dettaglio del post. È l'unico punto in cui la voce ammicca: il corpo sopra
+resta serio, altrimenti il cringe si spegne.
 
-## Niente sapore-AI
+Dato di collaudo: il muro di hashtag seppellisce il disclaimer davvero. Su un
+post virale, un commentatore su tre ci ha creduto nonostante la riga finale.
 
-Un post che profuma di modello linguistico non è credibile come cringe umano. La skill
-vieta in output il trattino lungo, i connettivi levigati, le triadi perfette, i paragrafi
-tutti della stessa misura e il finale riassuntivo; e impone almeno un dettaglio concreto
-inutile, un ritmo irregolare e una piccola sbavatura.
+### Niente sapore-AI
 
-## Come si tara il livello
+Un post che profuma di modello linguistico non è credibile come cringe umano.
+La skill vieta in output il trattino lungo, i connettivi levigati, le triadi
+perfette, i paragrafi tutti della stessa misura e il finale riassuntivo; e
+impone almeno un dettaglio concreto inutile, un ritmo irregolare e una piccola
+sbavatura.
 
-La leva non sono le emoji. È la **distanza fra l'evento raccontato e la morale che ci si
-costruisce sopra**: più l'evento è minuscolo e la morale è cosmica, più alto il cringe.
+### Come si tara il livello
 
-## Esempi
+La leva non sono le emoji. È la **distanza fra l'evento raccontato e la morale
+che ci si costruisce sopra**: più l'evento è minuscolo e la morale è cosmica,
+più alto il cringe.
 
-### Livello 4: credibile
+### Esempi
+
+Un livello 4 credibile, quello che passa inosservato nel feed:
 
 ```
 Tre anni fa non sapevo nemmeno cosa fosse un CRM.
@@ -121,92 +139,108 @@ Sei arrivato in fondo e hai alzato gli occhi al cielo? È una parodia.
 ```
 
 Fastidioso ma sobrio: humblebrag, gratitudine ostentata, morale proporzionata.
-Tre hashtag, zero emoji. Passa inosservato nel feed.
-
-### Livello 9: credibile
-
-```
-Ieri mattina sono entrato in una piccola pasticceria di provincia.
-
-Erano le 7:40.
-
-Dietro il bancone, una signora sui sessanta impastava a mano.
-Da sola.
-Come ogni mattina da 34 anni.
-
-Le ho chiesto: "Signora, ma non ha mai pensato di assumere qualcuno?"
-
-Lei non ha alzato la testa dall'impasto.
-
-Ha detto solo tre parole:
-
-"Insegnare a chi?"
-
-Silenzio.
-
-Sono rimasto lì, con il caffè in mano, a ripensare a tutte le aziende che ho
-visto in 12 anni di consulenza.
-
-Aziende da 40 dipendenti.
-Aziende da 200.
-Aziende con budget di formazione a sei cifre.
-
-E nessuna capace di rispondere a quella domanda.
-
-Il 78% dei manager che incontro mi parla di retention.
-Nessuno mi parla di TRASMISSIONE.
-
-Quella signora non ha un profilo LinkedIn.
-Non ha un personal brand.
-Non ha mai fatto un corso di leadership.
-
-Ma ha capito prima di tutti noi una cosa semplice:
-
-Non si costruisce un'azienda.
-Si costruisce chi verrà dopo.
-
-E tu, oggi, a chi stai insegnando? 👇
-
-P.S. Ho preso tre paste. Le migliori della mia vita.
-P.P.S. Ad ottobre apro le ultime 4 sessioni del mio percorso "Trasmissione".
-Scrivimi in privato la parola PASTICCERIA.
-
-#leadership #mindset #people #formazione #impresaitaliana #gratitudine
-#crescitapersonale #softskills #madeinitaly #trasmissione
-
-Hai letto fino a qui e volevi uccidermi? Non farlo, è semplicemente ironia.
-```
-
-Cinque moduli sovrapposti (`C19` `C02` `C04` `C13` `C30`), il P.P.S. che smaschera la
-lead-gen, il muro di hashtag, una morale cosmica costruita su tre paste. Screenshottabile
-, e ancora perfettamente credibile.
-
-Altri livelli (7, 10, e una versione parodica) in
+Gli altri livelli (7, 9, 10 e una versione parodica) sono in
 [`references/esempi.md`](.claude/skills/linkedin-cringe/references/esempi.md).
 
-> **Nota.** Nessun esempio in questo repository è la trascrizione o il rimaneggiamento di
-> un post reale. Sono tutti scritti da zero applicando la tassonomia e i moduli. Nomi,
-> aziende, numeri e aneddoti sono inventati.
+> **Nota.** Nessun esempio in questo repository è la trascrizione o il
+> rimaneggiamento di un post reale. Sono tutti scritti da zero applicando la
+> tassonomia e i moduli. Nomi, aziende, numeri e aneddoti sono inventati.
+
+### Occhio alle immagini
+
+Collaudato sul campo: il testo regge, **la foto generata con l'AI tradisce**.
+Cartelli con scritte storpiate, cappellino ad agosto, luce da giugno alle 5:41
+del mattino: i commentatori fanno zoom e smontano tutto in poche ore. La skill
+ora contiene le regole per non farsi sgamare dalla foto (o per farsi sgamare
+apposta, ai livelli alti), e a ogni consegna **propone anche il prompt pronto
+per generare l'immagine del post**: estetica da foto di smartphone, niente testo
+in scena, luce e stagione coerenti con quello che il post racconta.
+
+## La skill di analisi
+
+Dai a `linkedin-cringe-analytics` l'URL di un post LinkedIn e ottieni un report
+markdown in `analisi/YYYY-MM-DD-<tema>/report.md` con:
+
+- **la classifica creduloni/svegli**: quanti ci hanno creduto (😇), quanti
+  hanno colto lo scherzo (🎭), i dubbiosi (🤨) e i non classificabili (⬜),
+  con le percentuali calcolate sui soli commenti decidibili;
+- **la top ten dei commenti per gradimento** (reazioni, con tie-break sulle
+  risposte generate);
+- **i fenomeni ricorrenti**: citazioni, tormentoni, le trappole del post
+  notate dai lettori;
+- **la distribuzione dei toni** (ironico, motivazionale, correttivo,
+  logico-forense, indignato, aneddotico);
+- **l'incrocio categoria × esito**: chi ci casca, per tipo di profilo;
+- **il cringe-metro dei commenti**: i commenti in buona fede più cringe,
+  valutati con la scala 1-10 della skill gemella.
+
+Come si procura i commenti: con l'estensione **Claude in Chrome** fa tutto da
+sola nel tuo browser loggato (ordina per "più recenti", scrolla, espande le
+risposte, deduplica); senza estensione basta incollare il testo della pagina.
+Il playbook tecnico (DOM offuscato, liste virtualizzate, lazy-load) è in
+[`references/estrazione.md`](.claude/skills/linkedin-cringe-analytics/references/estrazione.md).
+
+Due regole fisse: i **commentatori sono sempre anonimizzati** nel report
+(niente nomi, solo categorie: "un recruiter", "una pagina satirica"), e la
+**copertura è sempre dichiarata** ("letti X commenti su un contatore di Y": il
+contatore di LinkedIn include i commenti cancellati e filtrati).
+
+### Risultati sul campo
+
+I report vengono scritti in `analisi/` (che resta fuori dal repository: sono
+dati sui post di chi usa la skill). I primi due, generati su post pubblicati
+per davvero, hanno dato questi numeri:
+
+| Post | Età | Impressioni | Creduloni | Svegli |
+|---|---|---|---|---|
+| la sedia | 1 giorno | ~122.000 | **36,0%** | 56,8% |
+| Athos, le 5:41 | 8 ore | ~24.600 | 8,3% | **86,1%** |
+
+La differenza non è nel testo: è nel pubblico. Nelle prime ore commenta la
+cerchia che conosce il gioco; i creduloni arrivano con la viralità. Bonus
+statistico: sul post della sedia, il 13,4% dei commenti citava la "cadrega" di
+Aldo, Giovanni e Giacomo.
+
+## Struttura
+
+```
+.claude/skills/
+├── linkedin-cringe/                generazione
+│   ├── SKILL.md                    flusso, domande, regole, paletti
+│   └── references/
+│       ├── tassonomia.md           definizione del cringe, scala 1-10
+│       ├── moduli.md               catalogo dei 33 moduli C01-C33
+│       ├── lessico.md              itanglese, formule, hashtag, altre lingue
+│       └── esempi.md               post calibrati sui livelli 4, 7, 9, 10
+└── linkedin-cringe-analytics/      analisi
+    ├── SKILL.md                    flusso: acquisizione, analisi, report
+    └── references/
+        ├── estrazione.md           playbook browser + fallback manuale + parsing
+        ├── classificazione.md      criteri creduto/colto, toni, categorie
+        └── report.md               struttura del report e regole di consegna
+analisi/                            i report prodotti (anonimizzati)
+```
 
 ## Installazione
 
-La skill vive in `.claude/skills/linkedin-cringe/` dentro questo repository, quindi
-**clonando il repo è già installata**: apri Claude Code nella cartella e la trovi
-disponibile senza fare altro.
+Le skill vivono in `.claude/skills/` dentro questo repository, quindi
+**clonando il repo sono già installate**: apri Claude Code nella cartella e le
+trovi disponibili senza fare altro.
 
 ```bash
 git clone https://github.com/matteobaccan/LinkedInCringe.git
 cd LinkedInCringe
 ```
 
-### Per usarla in tutti i tuoi progetti
+### Per usarle in tutti i tuoi progetti
 
-Copiala fra le skill personali. Da quel momento è disponibile ovunque, non solo qui.
+Copiale fra le skill personali. Da quel momento sono disponibili ovunque.
 
 **PowerShell (Windows):**
 
 ```powershell
 Copy-Item -Recurse .claude\skills\linkedin-cringe "$env:USERPROFILE\.claude\skills\linkedin-cringe"
+Copy-Item -Recurse .claude\skills\linkedin-cringe-analytics "$env:USERPROFILE\.claude\skills\linkedin-cringe-analytics"
 ```
 
 **Bash (macOS / Linux / Git Bash):**
@@ -214,61 +248,56 @@ Copy-Item -Recurse .claude\skills\linkedin-cringe "$env:USERPROFILE\.claude\skil
 ```bash
 mkdir -p ~/.claude/skills
 cp -r .claude/skills/linkedin-cringe ~/.claude/skills/linkedin-cringe
+cp -r .claude/skills/linkedin-cringe-analytics ~/.claude/skills/linkedin-cringe-analytics
 ```
 
-Se la installi in entrambi i posti tieni presente che diventano due copie indipendenti:
-modificandone una, l'altra resta indietro.
-
-### Per portarla in un altro progetto
-
-Copia `.claude/skills/linkedin-cringe/` dentro il `.claude/skills/` del progetto di
-destinazione e committala: così è disponibile a chiunque ci lavori.
+Se le installi in entrambi i posti tieni presente che diventano copie
+indipendenti: modificandone una, l'altra resta indietro.
 
 ### Verifica
 
-Digita `/linkedin-cringe`. Se compare nell'elenco delle skill, è installata.
+Digita `/linkedin-cringe` o `/linkedin-cringe-analytics`. Se compaiono
+nell'elenco delle skill, sono installate.
 
 ## Uso
+
+Generazione:
 
 ```
 /linkedin-cringe
 ```
-
-e rispondi alle domande. Oppure in linguaggio naturale:
 
 ```
 fammi un post cringe livello 8, credibile, voce da recruiter, tema colloqui
 ```
 
 ```
-post livello 10 parodico su un founder che torna dalle ferie
+rifallo con i moduli C15 e C32
+```
+
+Analisi:
+
+```
+/linkedin-cringe-analytics https://www.linkedin.com/posts/...
 ```
 
 ```
-rifallo con i moduli C15 e C18
-```
-
-## Struttura
-
-```
-.claude/skills/linkedin-cringe/
-├── SKILL.md                    flusso, domande, regole di composizione, paletti
-└── references/
-    ├── tassonomia.md           definizione del cringe, scala 1-10, asse credibilità
-    ├── moduli.md               catalogo dei 31 moduli C01-C31
-    ├── lessico.md              itanglese, formule, hashtag, emoji, adattamento ad altre lingue
-    └── esempi.md               post calibrati sui livelli 4, 7, 9, 10 e parodico
+analizza i commenti di questo post: <URL>
 ```
 
 ## Paletti
 
-Anche in modalità "credibile" la skill non genera:
+Anche in modalità "credibile" la skill di generazione non produce:
 
 - post attribuiti a **persone reali** o firmati da **aziende esistenti**
 - lutti, malattie o licenziamenti **reali** usati come materiale narrativo
 - contenuti che imitino un profilo specifico per farlo passare per autentico
 
 I nomi sono sempre di fantasia. È satira, non impersonificazione.
+
+La skill di analisi, dal canto suo: **anonimizza sempre i commentatori** nei
+report, giudica i commenti e mai le persone, tiene i dati grezzi fuori dal
+repository e si limita a leggere un thread pubblico.
 
 ## Licenza
 

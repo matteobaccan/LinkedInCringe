@@ -3,7 +3,10 @@
 Ogni modulo ha un codice. L'utente può sceglierli per codice (es. `C01, C13, C19`).
 I moduli si combinano: un post di livello 7 ne usa 3-4, uno di livello 10 ne usa 5+.
 
-Fonti: osservazione diretta dei pattern ricorrenti su LinkedIn Italia.
+Fonti: osservazione diretta dei pattern ricorrenti su LinkedIn Italia, più il
+collaudo sul campo di due post pubblicati (agosto 2026), i cui commenti sono
+stati analizzati con la skill gemella `linkedin-cringe-analytics`. Dove un
+modulo cita numeri, vengono da lì.
 
 ---
 
@@ -84,6 +87,11 @@ inventato a supporto.
 Panettiere, fioraio, tassista, barista, pescatore: figura umile che pronuncia una frase
 di saggezza millenaria che l'autore usa per fare consulenza.
 **Marcatore:** l'artigiano non alza mai la testa dal lavoro mentre parla.
+**L'oggetto-esca:** scegli l'oggetto concreto della scena sapendo quale riflesso
+condizionato attiva. Nel collaudo, una sedia in sala colloqui ha fatto citare la
+"cadrega" di Aldo, Giovanni e Giacomo al 13% dei commentatori. Superficie memetica
+alta = giro di battute garantito; per massimizzare i creduloni servono invece oggetti
+senza àncora comica nazionale.
 **Sotto-variante ostile:** invece di essere ammirato, l'artigiano viene compatito perché
 non applica il metodo dell'autore, non ottimizza, non scala, non fa marginalità.
 
@@ -122,6 +130,18 @@ sospetto che non esisteva.
 "non che io [attività banale di cui vergognarsi]".
 **Marcatore:** la precisazione occupa più righe del fatto che vorrebbe precisare.
 
+### C32: L'errore piantato
+Una sola impossibilità logica o cronologica, piantata di proposito nel racconto e
+mai riconosciuta dalla voce. Abbastanza sottile da passare alla lettura veloce,
+abbastanza concreta da far scattare chi legge con attenzione.
+**Esempio dal collaudo:** il candidato che "rimette a posto la sedia prima di
+alzarsi": almeno 6 commentatori l'hanno notato, ci è nato un thread, e un lettore
+in buona fede ha difeso il post citandone il testo contro i dubbiosi.
+**Regole:** una sola per post; riguarda la fisica o la cronologia dei fatti, mai
+la morale; la voce non la corregge e non ci torna sopra.
+**Effetto:** engagement logico-forense ("ma come ha fatto a…?") che tiene vivo il
+thread senza svelare la satira.
+
 ---
 
 ## B. Moduli retorici (come si argomenta)
@@ -143,6 +163,22 @@ missione", simmetrie perfette, zero attrito, tre esempi sempre in fila.
 ### C13: Numeri finti-precisi
 "Ho analizzato 1.247 profili", "+347% di conversioni in 90 giorni", "il 78% dei manager
 che incontro". Precisione decimale su misurazioni impossibili.
+**Collaudo sul campo:** sono l'elemento più citato in assoluto dai commentatori, sia
+da chi ci crede sia dalle parodie di rimando ("i 4.106 colloqui", "il 3%"). Bastano
+1-2 per post: diventano l'hook citabile.
+
+### C33: Il nervo scoperto
+Un'affermazione professionalmente sbagliata su un tema sensibile, rivendicata come
+merito. Chi lavora nel settore non resiste e corregge. **E chi corregge ha creduto:**
+è la misura di credibilità più affidabile emersa dal collaudo.
+**Materiali:** la RAL chiesta per ultima come segno di passione (oggi va dichiarata
+prima, e i lettori lo sanno), lo smart working chiesto al colloquio letto come
+pigrizia, le ferie mai prese come dedizione, il periodo di prova gratis come gavetta.
+**Effetto misurato:** il filone correttivo-normativo vale ~13% dei commenti di un
+post virale, tutto engagement in buona fede.
+**Regole:** l'errore è di prassi o di norma, riconoscibile da un professionista del
+tema, mai un'assurdità; la voce lo rivendica con orgoglio e non risponde alle
+correzioni.
 
 ### C11: Umiltà ostentata
 "Onorato e umilmente emozionato di annunciare…", "Non lo dico per vantarmi, ma",
@@ -190,6 +226,8 @@ tu…", tag a persone che non c'entrano nulla, "Ripubblica per chi ne ha bisogno
 Il post descrive una foto che non c'entra: un muro bianco, l'angolo di un orologio, lo
 stipite di una porta, una tazza fuori fuoco, uno screenshot di una notifica.
 In output: descrivi la foto fra parentesi quadre in fondo.
+**Se l'immagine è generata con l'AI:** leggi la sezione *Immagini* in SKILL.md.
+In registro credibile è il punto dove la finzione crolla per prima.
 
 ### C30: Lead-gen mascherata
 Contrasto fra l'attitudine disinteressata del testo e l'intento commerciale che spunta
