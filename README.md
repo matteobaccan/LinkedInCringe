@@ -4,16 +4,19 @@
 
 # LinkedIn Cringe
 
-Due skill per Claude Code, una coppia che si chiude a cerchio:
+Tre skill per Claude Code, che si chiudono a cerchio:
 
 - **`linkedin-cringe`** genera post LinkedIn cringe in italiano, quelli veri,
   quelli che vengono screenshottati e girati nelle chat;
 - **`linkedin-cringe-analytics`** scarica i commenti del post una volta
   pubblicato e misura cosa è successo: quanti ci hanno creduto, quanti hanno
   colto lo scherzo, la top ten per gradimento, i toni, il cringe involontario
-  dei commenti stessi.
+  dei commenti stessi;
+- **`linkedin-cringe-meter`**, il *Cringiometro*, misura il post di qualcun
+  altro con lo stesso metro: voto da 1 a 10, ganci presi, verdetto, e
+  un'immagine anonima pronta da lasciare nei commenti.
 
-Quello che la seconda skill scopre finisce nei moduli della prima: il catalogo
+Quello che le altre due scoprono finisce nei moduli della prima: il catalogo
 si migliora coi dati veri, non con le opinioni.
 
 La skill di generazione non produce "post brutti". Produce **imbarazzo
@@ -31,14 +34,33 @@ Quando la invochi senza parametri, la skill ti fa quattro domande:
 | **Livello di cringe** | 4 lieve · 7 imbarazzante · 9 insostenibile · 10 leggendario |
 | **Credibilità** | credibile (deve passare per vero) · parodico (satira dichiarata) |
 | **Voce** | fuffaguru · founder/CEO · HR/recruiter · boomer con consiglio |
-| **Moduli cringe** | scelta multipla da un catalogo di 33 moduli (`C01`…`C33`) |
+| **Moduli cringe** | scelta multipla da un catalogo di 36 moduli (`C01`…`C36`) |
 
 Se invece scrivi già tutto nella richiesta (`post livello 9, credibile, tema
 smart working, moduli C19 e C02`), salta le domande e genera direttamente.
 
+### Ispirato a fatti reali
+
+Una buona fetta del cringe vero non parte da un aneddoto inventato ma da una
+notizia: il rendering che fa il giro del mondo, il dato Inps, le accise, la
+finale persa. Il fatto è vero; cringe è l'uso che se ne fa. La skill lo
+riproduce in due modi:
+
+- **dai tu il fatto** (`ispirati alla notizia X`, un dato, un link) e la skill
+  lo usa con cifre e date esatte;
+- **dici solo "ispirati all'attualità"** e la skill cerca le notizie degli
+  ultimi giorni, te ne propone 3-4 come ganci e scrive sul prescelto.
+
+Le regole stanno in
+[`references/attualita.md`](.claude/skills/linkedin-cringe/references/attualita.md):
+il fatto resta vero, esatto e mai linkato nel corpo, la morale resta sganciata,
+e la riga finale separa il vero dal finto ("La notizia è vera. La lezione no.").
+**Le notizie tragiche si usano solo in registro parodico**: in credibile
+vengono scartate o attenuate al dato aggregato.
+
 ### Il catalogo dei moduli
 
-33 moduli codificati in
+36 moduli codificati in
 [`references/moduli.md`](.claude/skills/linkedin-cringe/references/moduli.md),
 divisi in narrativi, retorici e formali. Alcuni esempi:
 
@@ -53,11 +75,17 @@ divisi in narrativi, retorici e formali. Alcuni esempi:
 - `C30` lead-gen mascherata, il P.S. che smentisce tutto il post
 - `C32` l'errore piantato, l'impossibilità logica lasciata lì come esca
 - `C33` il nervo scoperto, l'errore di prassi che i professionisti correggeranno
+- `C34` il diario orario, "Ore 8:23, solo una controllatina alle email"
+- `C35` statistica a sproposito, i morti per il caldo per convincere i genitori
+  a mettere il condizionatore in soggiorno
+- `C36` il rifiuto come flex, "sono io che scelgo i clienti"
 
-Gli ultimi due sono nati dall'analisi sul campo: `C32` dall'osservazione che la
-sedia rimessa a posto *prima di alzarsi* ha generato thread interi, `C33` dal
-fatto che il 13% dei commenti a un post virale erano correzioni serissime sulla
-RAL. Chi ti corregge ti ha creduto.
+`C32` e `C33` sono nati dall'analisi sul campo: il primo dall'osservazione che
+la sedia rimessa a posto *prima di alzarsi* ha generato thread interi, il
+secondo dal fatto che il 13% dei commenti a un post virale erano correzioni
+serissime sulla RAL. Chi ti corregge ti ha creduto. `C34`-`C36` vengono
+dall'osservazione del cringe che LinkedIn produce ogni giorno, e che qualcuno
+ha la pazienza di raccogliere (vedi i ringraziamenti in fondo).
 
 ### Lingue
 
@@ -82,6 +110,8 @@ resta serio, altrimenti il cringe si spegne.
 
 Dato di collaudo: il muro di hashtag seppellisce il disclaimer davvero. Su un
 post virale, un commentatore su tre ci ha creduto nonostante la riga finale.
+Con un gancio reale la riga separa il vero dal finto ("La notizia è vera. La
+lezione no."), così chi scopre lo scherzo non butta via anche il dato.
 
 ### Niente sapore-AI
 
@@ -185,6 +215,67 @@ cerchia che conosce il gioco; i creduloni arrivano con la viralità. Bonus
 statistico: quando nel post compare un oggetto con un'àncora comica nazionale,
 più di un commento su dieci cita la scenetta di riferimento.
 
+## Il Cringiometro
+
+Dai a `linkedin-cringe-meter` l'URL di un post LinkedIn (anche uno short link
+`lnkd.in`), oppure il testo incollato o uno screenshot, e ottieni:
+
+- **il livello 1-10** sulla stessa scala del generatore (1-2 innocuo, 3-4
+  lieve, 5-6 fastidioso, 7-8 imbarazzante, 9 insostenibile, 10 leggendario),
+  con lo scarto evento → morale in una riga;
+- **i ganci presi**: i moduli del catalogo rilevati, ciascuno con la citazione
+  del post che lo prova;
+- il **registro** (credibile, parodico, o *cringe dichiarato* se c'è la riga
+  di disclaimer), il **sapore-AI** (bassa/media/alta), la **lead-gen** e dove
+  si nasconde;
+- **il verdetto**: una frase secca, stile blastometro ma in tema cringe;
+- **cosa manca per salire** di un livello, che è il ponte col generatore;
+- un report markdown in `analisi/YYYY-MM-DD-<tema>/cringiometro.md` e
+  **un'immagine 1080×1080** pronta da lasciare come risposta sotto al post.
+
+Con l'estensione **Claude in Chrome** legge il post da sola nel tuo browser
+loggato (solo il testo del post, non i commenti); senza, incolli il testo.
+L'immagine **parla la lingua del post**: titolo, registro e parola della scala
+sono localizzati (italiano, inglese, tedesco, francese, spagnolo, altre via
+override), e i nomi dei moduli, il verdetto e la citazione vengono scritti in
+quella lingua. Il report resta nella tua.
+
+### Galleria
+
+I primi quattro sono post inventati, presi da
+[`references/esempi.md`](.claude/skills/linkedin-cringe/references/esempi.md)
+del generatore (per questo il registro è "cringe dichiarato"); gli ultimi due
+sono post reali in inglese, anonimizzati.
+
+| | | |
+|---|---|---|
+| <img src="assets/cringiometro-4.png" width="300" alt="Cringiometro 4/10, lieve: C03 C11 C21"> | <img src="assets/cringiometro.png" width="300" alt="Cringiometro 7/10, imbarazzante: C01 C13 C08 C21 C10 C23"> | <img src="assets/cringiometro-9.png" width="300" alt="Cringiometro 9/10, insostenibile: C19 C02 C04 C13 C30 C31 C23"> |
+| 4/10, l'humblebrag sobrio | 7/10, la macchinetta del caffè | 9/10, la pasticceria e il P.P.S. |
+| <img src="assets/cringiometro-10.png" width="300" alt="Cringiometro 10/10, leggendario: C06 C09 C13 C22 C29 C24 C23"> | <img src="assets/cringiometro-en-7.png" width="300" alt="Cringe Meter 7/10, embarrassing: C30 C10 C33 C14 C08"> | <img src="assets/cringiometro-en-2.png" width="300" alt="Cringe Meter 2/10, harmless: C23"> |
+| 10/10, le 5:17 e la neonata | 7/10 in inglese, post reale: il collasso della società e poi "hire me" | 2/10 in inglese, post reale: una demo di prodotto che ammette di esserlo |
+
+L'ultimo è il campione di controllo: un post tecnico onesto deve uscire basso.
+Il Cringiometro distingue il cringe dal marketing dichiarato, dall'opinione
+che non condividi e dal post semplicemente brutto (che è un 2, non un 7).
+
+### Come è fatto
+
+Il voto lo dà il modello leggendo `tassonomia.md` e `moduli.md` del generatore
+attraverso la rubrica in
+[`references/valutazione.md`](.claude/skills/linkedin-cringe-meter/references/valutazione.md):
+prima lo scarto, poi i moduli con prova, poi ±1 per il registro. Ogni modulo
+senza citazione non conta. L'immagine la disegna
+[`scripts/cringiometro.py`](.claude/skills/linkedin-cringe-meter/scripts/cringiometro.py)
+(Python + Pillow, nessun browser) a partire da un JSON con punteggio, registro,
+moduli, verdetto, citazione e lingua: si può ritoccare il JSON e rigenerare a
+mano. Senza Pillow esce l'SVG.
+
+L'immagine **non porta mai nome, foto o headline dell'autore**: si giudica il
+post, non la persona, e il soggetto delle frasi è sempre il post. Lutti,
+malattie e licenziamenti veri non si valutano. Lasciare l'immagine come
+risposta sotto al post di un estraneo è una scelta tua: la skill consegna il
+file e si ferma lì.
+
 ## Struttura
 
 ```
@@ -193,17 +284,25 @@ più di un commento su dieci cita la scenetta di riferimento.
 │   ├── SKILL.md                    flusso, domande, regole, paletti
 │   └── references/
 │       ├── tassonomia.md           definizione del cringe, scala 1-10
-│       ├── moduli.md               catalogo dei 33 moduli C01-C33
+│       ├── moduli.md               catalogo dei 36 moduli C01-C36
+│       ├── attualita.md            il gancio reale: cringe ispirato ai fatti
 │       ├── lessico.md              itanglese, formule, hashtag, altre lingue
 │       └── esempi.md               post calibrati sui livelli 4, 7, 9, 10
-└── linkedin-cringe-analytics/      analisi
-    ├── SKILL.md                    flusso: acquisizione, analisi, report
-    └── references/
-        ├── estrazione.md           playbook browser + fallback manuale + parsing
-        ├── classificazione.md      criteri creduto/colto, toni, categorie
-        └── report.md               struttura del report e regole di consegna
+├── linkedin-cringe-analytics/      analisi
+│   ├── SKILL.md                    flusso: acquisizione, analisi, report
+│   └── references/
+│       ├── estrazione.md           playbook browser + fallback manuale + parsing
+│       ├── classificazione.md      criteri creduto/colto, toni, categorie
+│       └── report.md               struttura del report e regole di consegna
+└── linkedin-cringe-meter/          cringiometro
+    ├── SKILL.md                    flusso: acquisizione, valutazione, immagine
+    ├── references/
+    │   ├── valutazione.md          la rubrica: livello, moduli, verdetto
+    │   └── report.md               struttura del report e regole di anonimato
+    └── scripts/
+        └── cringiometro.py         genera PNG + SVG dell'immagine di risposta
 analisi/                            i report prodotti (anonimizzati)
-assets/                             banner del README
+assets/                             banner del README, galleria del cringiometro
 community/                          i post cringe accettati dalla community
 ```
 
@@ -227,6 +326,7 @@ Copiale fra le skill personali. Da quel momento sono disponibili ovunque.
 ```powershell
 Copy-Item -Recurse .claude\skills\linkedin-cringe "$env:USERPROFILE\.claude\skills\linkedin-cringe"
 Copy-Item -Recurse .claude\skills\linkedin-cringe-analytics "$env:USERPROFILE\.claude\skills\linkedin-cringe-analytics"
+Copy-Item -Recurse .claude\skills\linkedin-cringe-meter "$env:USERPROFILE\.claude\skills\linkedin-cringe-meter"
 ```
 
 **Bash (macOS / Linux / Git Bash):**
@@ -235,6 +335,7 @@ Copy-Item -Recurse .claude\skills\linkedin-cringe-analytics "$env:USERPROFILE\.c
 mkdir -p ~/.claude/skills
 cp -r .claude/skills/linkedin-cringe ~/.claude/skills/linkedin-cringe
 cp -r .claude/skills/linkedin-cringe-analytics ~/.claude/skills/linkedin-cringe-analytics
+cp -r .claude/skills/linkedin-cringe-meter ~/.claude/skills/linkedin-cringe-meter
 ```
 
 Se le installi in entrambi i posti tieni presente che diventano copie
@@ -242,8 +343,10 @@ indipendenti: modificandone una, l'altra resta indietro.
 
 ### Verifica
 
-Digita `/linkedin-cringe` o `/linkedin-cringe-analytics`. Se compaiono
-nell'elenco delle skill, sono installate.
+Digita `/linkedin-cringe`, `/linkedin-cringe-analytics` o
+`/linkedin-cringe-meter`. Se compaiono nell'elenco delle skill, sono installate.
+Il Cringiometro usa Pillow per l'immagine: `pip install pillow` se manca
+(senza, consegna l'SVG).
 
 ## Uso
 
@@ -261,6 +364,10 @@ fammi un post cringe livello 8, credibile, voce da recruiter, tema colloqui
 rifallo con i moduli C15 e C32
 ```
 
+```
+scrivimi un post livello 7, voce founder, ispirato all'attualità
+```
+
 Analisi:
 
 ```
@@ -270,6 +377,23 @@ Analisi:
 ```
 analizza i commenti di questo post: <URL>
 ```
+
+Cringiometro:
+
+```
+/linkedin-cringe-meter https://lnkd.in/p/...
+```
+
+```
+quanto è cringe questo post? <testo incollato>
+```
+
+```
+cringiometro su questi tre: <URL> <URL> <URL>
+```
+
+L'immagine esce nella lingua del post; se vuoi forzarla ("immagine in
+inglese"), basta dirlo.
 
 ## Paletti
 
@@ -285,6 +409,12 @@ La skill di analisi, dal canto suo: **anonimizza sempre i commentatori** nei
 report, giudica i commenti e mai le persone, tiene i dati grezzi fuori dal
 repository e si limita a leggere un thread pubblico.
 
+Il Cringiometro **non nomina mai l'autore** del post valutato (né nel report,
+né nell'immagine, né in chat), giudica il post e non la persona, e si rifiuta
+di dare un voto a lutti, malattie e licenziamenti veri. Lasciare l'immagine
+come risposta sotto al post di un estraneo è una scelta di chi la usa: la skill
+consegna il file e si ferma lì.
+
 ## Manda il tuo cringe
 
 Il catalogo migliora coi dati veri, e i dati veri li avete voi: il post del
@@ -299,8 +429,9 @@ del post, o direttamente una PR su `esempi.md`. Regole di ingaggio:
   screenshot con foto profilo — il paletto qui sopra vale anche all'incontrario;
 - diteci se è **trovato in natura o scritto da voi** (non giudichiamo, anzi:
   il cringe autoprodotto consapevole è ricerca);
-- se vi va, azzardate **livello 1-10 e moduli** che ci vedete: se il post non
-  rientra in nessuno dei 33, potreste aver appena scoperto il C34.
+- se vi va, azzardate **livello 1-10 e moduli** che ci vedete, o passatelo
+  prima al Cringiometro e allegate l'immagine: se il post non rientra in
+  nessuno dei 36, potreste aver appena scoperto il C37.
 
 I post accettati finiscono in [`community/`](community/), i migliori negli
 esempi della skill, e i pattern nuovi diventano moduli del catalogo. Il
