@@ -1,6 +1,6 @@
 ---
 name: linkedin-cringe
-description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), credibilità (deve passare per vero / parodia dichiarata) e moduli cringe scelti da un catalogo di 33. Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, oppure vuole parodiare lo stile LinkedIn.
+description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), credibilità (deve passare per vero / parodia dichiarata) e moduli cringe scelti da un catalogo di 36, con la possibilità di partire da un fatto reale (una notizia data dall'utente o cercata dalla skill). Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, un post "ispirato all'attualità", oppure vuole parodiare lo stile LinkedIn.
 ---
 
 # LinkedIn Cringe: generatore di post
@@ -57,6 +57,22 @@ Quattro combo pronte; l'utente può usare "Other" per scrivere i codici del cata
 
 Se manca il tema, chiedilo a parte in chat con una riga, non con AskUserQuestion.
 
+**Gancio reale (opzionale).** Il tema può venire dalla cronaca invece che dalla
+fantasia: è quello che fa una buona fetta del cringe vero. Si attiva quando l'utente
+scrive "ispirati a…", "prendi spunto da…", "dall'attualità", "dalla cronaca", oppure
+incolla una notizia, un dato o un link. Due rami:
+
+- **fatto dato dall'utente** → si usa quello; se è un link, `WebFetch` per ricavare
+  data, cifre e luoghi esatti;
+- **solo "attualità"** → cerchi tu le notizie degli ultimi 7-10 giorni (`WebSearch`,
+  con i feed RSS come fallback) e proponi 3-4 ganci con `AskUserQuestion`; l'utente
+  sceglie o scrive il suo. Questa domanda sostituisce quella sul tema.
+
+Prima di procedere leggi `references/attualita.md`: spiega i cinque usi del fatto
+reale, le regole di credibilità (il fatto resta vero ed esatto, la morale resta
+sganciata) e i paletti specifici, in particolare che **le tragedie si usano solo in
+registro parodico**.
+
 **Lingua.** Default: italiano. Non è una quinta domanda, si deduce dalla richiesta
 ("un post in inglese", "per il mercato tedesco", oppure il fatto che l'utente scriva in
 un'altra lingua). Se richiesta una lingua diversa dall'italiano, leggi la sezione
@@ -103,6 +119,10 @@ banale e la morale è cosmica, più alto il cringe. Non alzare il livello aggiun
 emoji: alza lo scarto.
 
 Consulta `references/esempi.md` per sentire come suonano i livelli 4, 7, 9 e 10.
+
+Se il post ha un gancio reale, le cifre e le date del fatto restano quelle della fonte
+(niente C13 sul fatto: i numeri finti-precisi vanno sulle misurazioni dell'autore), il
+fatto occupa al massimo tre righe e non viene mai linkato nel corpo del post.
 
 ### 4. Consegna
 
@@ -212,6 +232,10 @@ quanto in profondità seppellirla in base a quanto vuoi che lo scherzo si sveli.
 
 Quando consegni, di' all'utente in mezza riga che quella è la riga rimovibile.
 
+Con un gancio reale la riga deve separare il vero dal finto ("La notizia è vera. La
+lezione no."): altrimenti chi scopre lo scherzo butta via anche il dato. Se l'utente
+vuole citare la fonte, il link va qui, non nel corpo.
+
 
 ## Paletti
 
@@ -223,5 +247,7 @@ Valgono anche quando il registro è "credibile", anzi, soprattutto lì:
   sfuggita come oggetti ("ho aperto Excel").
 - **Niente lutti, malattie o licenziamenti reali** dell'utente o di terzi. Il modulo C17
   (trauma mining) si usa solo con eventi palesemente inventati, e va segnalato.
+- **Notizie tragiche come gancio reale solo in registro parodico.** In credibile si
+  scartano o si attenuano al dato aggregato. Dettagli in `references/attualita.md`.
 - Se l'utente vuole pubblicarlo davvero, ricordagli una volta che è un post finto,
   poi fai quello che chiede.

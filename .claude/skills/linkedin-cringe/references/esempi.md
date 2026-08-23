@@ -205,3 +205,51 @@ Stesso livello di cringe, registro dichiaratamente esagerato: si capisce che è 
 
 **Differenza dal credibile:** l'iperbole è impossibile (il cane con un job title), la
 battuta è costruita per far ridere. Diverte di più, imbarazza di meno.
+
+---
+
+## Livello 7: credibile, con gancio reale
+**Voce:** HR / recruiter · **Gancio:** dati Inps al Meeting di Rimini, 23 agosto 2026
+(tre milioni di under 34 iscritti al portale, +12% in un anno) · **Moduli:** C01 (la
+notizia come parabola) + C33 + C14 + C13 + C21 + C10 + C23
+
+> Stamattina ho letto un dato che mi ha fatto pensare.
+>
+> Tre milioni di ragazzi sotto i 34 anni si sono iscritti al portale dell'Inps.
+> Più 12 per cento in un anno.
+> Lo ha detto l'Inps stessa, al Meeting di Rimini.
+>
+> Tre milioni.
+>
+> Io faccio colloqui da 14 anni.
+> E vi dico cosa vedo io, ogni settimana, dall'altra parte del tavolo.
+>
+> Ragazzi che al primo colloquio mi chiedono dello smart working.
+> Poi dei permessi.
+> Poi della RAL.
+>
+> La pensione, ormai, se la controllano sul telefono prima di aver firmato il primo contratto.
+>
+> Non è colpa loro.
+> È che nessuno gli ha più detto che la pensione si costruisce con la gavetta, non con
+> un'app.
+>
+> Ai miei tempi il portale era il capo. Lo aprivi alle 7 e lo chiudevi quando lui diceva
+> basta.
+>
+> Su 212 colloqui fatti quest'anno, 3 candidati mi hanno chiesto cosa avrebbero imparato.
+> Tre.
+> Come i milioni di sopra, ma con un'altra unità di misura.
+>
+> E voi, la pensione, la controllate o la costruite? 👇
+>
+> #recruiting #giovani #lavoro #Inps #gavetta #HR #mindset #futuro #pensione
+>
+> Il dato Inps è vero. I 212 colloqui no, e nemmeno il consiglio: è satira.
+
+**Perché è un 7 con gancio reale:** le prime quattro righe sono cronaca esatta (cifre e
+luogo della fonte, niente link), poi il post diventa il solito post: il dato sui
+giovani che si informano viene letto al contrario (C33, chi lavora nelle HR correggerà
+che informarsi sulla pensione è buon senso), la boomerata arriva puntuale, i numeri
+finti-precisi stanno sulle misurazioni dell'autore e non sul fatto. Il disclaimer
+separa il vero dal finto.

@@ -6,7 +6,8 @@ I moduli si combinano: un post di livello 7 ne usa 3-4, uno di livello 10 ne usa
 Fonti: osservazione diretta dei pattern ricorrenti su LinkedIn Italia, più il
 collaudo sul campo di due post pubblicati (agosto 2026), i cui commenti sono
 stati analizzati con la skill gemella `linkedin-cringe-analytics`. Dove un
-modulo cita numeri, vengono da lì.
+modulo cita numeri, vengono da lì. I moduli C34-C36 vengono dall'osservazione di
+post reali raccolti da community che collezionano cringe (agosto 2026).
 
 ---
 
@@ -142,6 +143,23 @@ la morale; la voce non la corregge e non ci torna sopra.
 **Effetto:** engagement logico-forense ("ma come ha fatto a…?") che tiene vivo il
 thread senza svelare la satira.
 
+### C36: Il rifiuto come flex
+L'autore si vanta di chi NON serve: i clienti che scarta, le offerte che declina, le
+persone che "non sono pronte" per lavorare con lui. La selezione al contrario come
+prova di valore.
+**Meccanismo:** il rifiuto viene raccontato come atto di cura verso sé stessi e verso
+"la propria gente", mai come mancanza di domanda. Di solito arriva con una C29 in
+apertura ("non perché io voglia fare il fenomeno") e con una C30 in coda (il test
+gratuito, il form, "scrivimi").
+**Materiali:** il cliente che chiede una settimana per pensarci e viene scartato, la
+call "dichiaratamente commerciale" in cui si decide subito o mai più, l'amico di
+vecchia data che conferma ("i clienti che ti scelgono sono quelli che scegli tu"), il
+lessico da coach: "pronto al cambiamento", "prossimo livello", "evitamento ben
+vestito", "lucidità", "restituzione", "la mia gente".
+**Marcatore:** la frase "sono io che scelgo", in una qualunque delle sue forme, e la
+confessione che "qualcosa dentro di me è cambiato" davanti a un cliente con gli occhi
+lucidi.
+
 ---
 
 ## B. Moduli retorici (come si argomenta)
@@ -179,6 +197,24 @@ post virale, tutto engagement in buona fede.
 **Regole:** l'errore è di prassi o di norma, riconoscibile da un professionista del
 tema, mai un'assurdità; la voce lo rivendica con orgoglio e non risponde alle
 correzioni.
+
+### C35: Statistica a sproposito
+Un dato macroscopico, spesso drammatico e vero, usato per giustificare un problema
+domestico o aziendale minuscolo. O il contrario: il proprio micro-caso elevato a
+prova di un fenomeno nazionale.
+**Meccanismo:** lo scarto di scala. C01 lavora sulla distanza fra evento e morale;
+C35 lavora sulla distanza fra la grandezza del numero e la piccolezza della cosa
+che dovrebbe dimostrare.
+**Costruzione tipo:** "Piccolo dato per la trattativa: nel 2024 il caldo è stato
+associato a 60mila morti in Europa… Non ha alcun senso. Basterebbe accendere il
+condizionatore in soggiorno."
+**Materiali:** i morti per il caldo e l'aria condizionata dei genitori, il PIL e il
+proprio listino, i dati Istat sulla natalità e il team che non cresce, il confronto
+con un paese lontano che non c'entra nulla ("almeno non vivo in India").
+**Regole:** il dato è vero e citato giusto (vedi `attualita.md`: i commentatori
+controllano); la sproporzione non viene mai riconosciuta dalla voce. In registro
+credibile, niente tragedie con vittime nominate: dati aggregati e annuali.
+**Marcatore:** la parola "basterebbe".
 
 ### C11: Umiltà ostentata
 "Onorato e umilmente emozionato di annunciare…", "Non lo dico per vantarmi, ma",
@@ -239,3 +275,18 @@ che apre "le ultime N sessioni" di un percorso a pagamento.
 ### C31: Tic tipografici
 MAIUSCOLO per enfasi su una parola sola. Puntini di sospensione a tre o quattro.
 Il "P.S." finale. La riga singola isolata: "Punto." / "Fine." / "Tutto qui."
+
+### C34: Il diario orario
+Il post è una timeline con orari precisi al minuto: "Ore 8:00 caffè / Ore 8:23
+'stamattina niente email'… solo una controllatina / Ore 8:42 un cliente dall'India
+ha scritto durante la notte / Ore 9:15 'chiudo tutto' / Ore 9:23 LinkedIn, solo per
+vedere una cosa". Tipicamente racconta un giorno di riposo in cui si lavora comunque.
+**Meccanismo:** la forma diaristica trasforma la dipendenza dal lavoro in una
+sequenza di micro-cedimenti teneri e auto-indulgenti. È C06 (hustle tossico) nella
+variante *negata*: "oggi non lavoro" seguito dalla prova che non è vero, offerta
+come virtù.
+**Costruzione tipo:** 6-10 righe "Ore HH:MM - [gesto]", orari non tondi, almeno un
+"solo una cosa" o "solo un attimo", un familiare che chiede "ma oggi non lavoravi?",
+chiusa con la morale sulla propria categoria professionale ("chi lavora davvero sui
+mercati internazionali non guarda più il mondo come un turista").
+**Marcatore:** la parola "solo" ripetuta a ogni cedimento.
