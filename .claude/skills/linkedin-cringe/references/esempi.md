@@ -6,6 +6,10 @@ moduli di questo repository, proprio come farà la skill. Nomi, aziende, numeri,
 aneddoti sono inventati. Servono solo a tarare l'orecchio sui livelli: se un esempio
 suona familiare è perché il genere è ripetitivo, non perché venga da qualche parte.
 
+Unica eccezione: le **notizie** citate nei due esempi con gancio reale sono vere e
+riportate con cifre, date e luoghi esatti. È la regola di `attualita.md`, il fatto resta
+il fatto. Tutto quello che il post ci costruisce sopra è inventato.
+
 ---
 
 ## Livello 4: credibile
@@ -253,3 +257,94 @@ giovani che si informano viene letto al contrario (C33, chi lavora nelle HR corr
 che informarsi sulla pensione è buon senso), la boomerata arriva puntuale, i numeri
 finti-precisi stanno sulle misurazioni dell'autore e non sul fatto. Il disclaimer
 separa il vero dal finto.
+
+---
+
+## Livello 9: surreale deadpan, con gancio reale
+**Voce:** consulente · **Gancio:** i cervi di Scanno, 24 agosto 2026 (due turisti
+caricati in due giorni, il sindaco prepara un'ordinanza che vieta di avvicinarsi, il
+Parco valuta di spostare l'animale) · **Moduli:** C37 + C19 + C20 + C04 + C02 + C13 +
+C28 + C08 + C21 + C31 + C10 + C23 + C30
+
+> Il cervo mi stava aspettando.
+>
+> Non lo scrivo per fare colpo.
+>
+> In questi giorni gira la storia di Scanno: due persone caricate dal cervo in due giorni, il sindaco che prepara un'ordinanza per vietare di avvicinarsi, il Parco che valuta di spostare l'animale in una zona più remota.
+>
+> Tutti hanno visto i video.
+> Nessuno ha visto la cosa importante.
+>
+> Io ero lì due giorni fa. Giovedì.
+>
+> Erano le 5:41 e il lago aveva la sua forma di cuore, ma vista da dietro.
+>
+> In mezzo all'acqua c'era una signora seduta su una sedia di plastica bianca. Con il cappotto. Beveva un caffè.
+>
+> Le ho chiesto dove fossero i cervi.
+>
+> Non ha alzato la testa.
+>
+> Ha detto solo: «I cervi non sono quello che sembrano.»
+>
+> Poi ha detto un'altra cosa, ma la diceva al contrario, e per educazione non ho chiesto di ripetere.
+>
+> Alle 5:52 il cervo è uscito dal ronzio dei lampioni.
+>
+> Non dagli alberi. Dal ronzio.
+>
+> Si è avvicinato fino a toccarmi la manica e aveva il mio stesso profumo.
+>
+> Mi ha guardato tre secondi.
+>
+> Non mi ha caricato. Ha fatto una cosa peggiore.
+>
+> Mi ha dato un feedback.
+>
+> Silenzio.
+>
+> In 14 anni di consulenza ho condotto 1.318 sessioni di allineamento. In 1.311 c'era un cervo nella stanza e nessuno lo nominava.
+>
+> Il mio cervello da advisor si è attivato lì, con i piedi bagnati.
+>
+> Non è un animale selvatico.
+> È uno STAKEHOLDER che non ha ricevuto l'agenda.
+>
+> Non si vieta l'avvicinamento.
+> Si impara la distanza giusta.
+>
+> Da giovedì ho schedulato una call ricorrente con me stesso. Il giovedì.
+>
+> E tu, oggi, chi hai spostato in una zona più remota? 👇
+>
+> P.S. A settembre apro le ultime 3 sessioni del percorso «La Distanza Giusta». Scrivimi in privato la parola CERVO.
+> P.P.S. La signora sulla sedia non c'era. Nel senso che c'è ancora.
+>
+> #leadership #mindset #feedback #stakeholder #crescitapersonale #consulenza #Scanno #naturaeimpresa #softskills #distanza #abruzzo #vita
+>
+> La notizia di Scanno è vera: i cervi, i due turisti caricati, l'ordinanza in arrivo. Tutto il resto no, e la signora sulla sedia meno che mai. È satira.
+
+**Perché è surreale e non parodico:** non c'è nessuna battuta. Il cervo non ha un job
+title (quello sarebbe il cane Chief Instinct Officer dell'esempio parodico qui sopra):
+dà un feedback, e la voce lo riferisce con la stessa intonazione con cui riferirebbe il
+traffico. Nessuna riga ammicca, nessuna spiega, nessuna dice "sembrava un sogno".
+
+**Perché è un 9:** la struttura cringe è intatta sotto il sogno. Colpo di scena con
+"Silenzio.", numeri finti-precisi (1.318 e 1.311), MAIUSCOLO su parola singola,
+l'aforisma "Non è X. È Y." che riporta tutto nel gergo aziendale, la CTA che
+riformula la notizia in domanda da HR, il muro di hashtag e il P.S. che vende il
+percorso. Il P.P.S. resta dentro la fisica del sogno invece di uscirne.
+
+**Il gancio reale:** tre righe di cronaca esatta e mai linkata, poi comincia il sogno.
+Il fatto non sogna: è l'unico punto fermo, ed è per questo che l'errore piantato (`C32`)
+sta lì e non nella scena onirica. "Due giorni fa. Giovedì" non torna con il giorno di
+pubblicazione, ed è l'unica cosa verificabile che non quadra.
+
+**Una fisica sola:** i cervi escono dall'elettricità, la signora è dove non può essere,
+il tempo non si somma. Tre elementi, tutti della stessa famiglia. Se ce ne fossero
+dieci, sarebbe rumore.
+
+**L'immagine** era la sedia di plastica bianca vuota, in piedi nell'acqua bassa del lago
+all'alba, fotografata storta da uno smartphone, con la sagoma sfocata di un cervo sulla
+riva opposta. Anomalia unica, stile noioso: il prompt non conteneva la parola
+"surreale".

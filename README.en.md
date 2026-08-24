@@ -26,9 +26,10 @@ text doesn't have, and is selling something while pretending to sell nothing.
 ## Generation
 
 Invoked bare, the skill asks four questions: **cringe level** (4 mild ·
-7 embarrassing · 9 unbearable · 10 legendary), **credibility** (believable
-vs. declared parody), **voice** (hustle guru, founder/CEO, HR/recruiter,
-boomer with advice), and which of the **36 cringe modules** (`C01`…`C36`)
+7 embarrassing · 9 unbearable · 10 legendary), **register** (believable,
+declared parody, or surreal deadpan), **voice** (hustle guru, founder/CEO,
+HR/recruiter, boomer with advice), and which of the **37 cringe modules**
+(`C01`…`C37`)
 to build on — forced parables, moralistic plot twists, strategic
 vulnerability, toxic hustle, fake-precise numbers, broetry, planted logical
 errors, hour-by-hour diaries, out-of-scale statistics, and more. Spell
@@ -41,9 +42,25 @@ news item, a figure or a link and it keeps dates and numbers exact; say
 proposes 3-4 hooks and writes on the one you pick. The fact stays true and
 unlinked in the body, the moral stays unrelated, and the closing line
 separates the true part from the fake one. Tragic news is used only in
-parody mode; in believable mode it is dropped or softened to aggregate data.
-See
+parody mode; in believable mode it is dropped or softened to aggregate data,
+and the surreal register is no exception. See
 [`references/attualita.md`](.claude/skills/linkedin-cringe/references/attualita.md).
+
+The third register is the hard one: **the world is impossible and the voice
+never notices.** Not believable (nobody buys a deer stepping out of the hum of
+a streetlamp) and not parody (there is no joke, the fourth wall stays up), it
+keeps the Monday-morning motivational tone while the facts stop working. It
+holds up because all three cringe conditions survive: sincerity is total, the
+gap is enormous (a business moral glued onto an event that cannot have
+happened), and the P.S. selling the course still shows up inside the dream.
+Ask for it ("David Lynch style", "surreal", "dreamlike"), it lives from level
+7 up and peaks at 9. One dream physics per post, no explanations, concrete
+banal detail carrying the impossible, the news item as the only fixed point,
+and the counterintuitive image rule: **the impossible goes in the subject, the
+style stays boring** (never prompt "dreamlike" or "cinematic"; a photo that
+looks like art gives it away as much as a glossy one). Rules, repertoire,
+banned phrases and a diagnosis table in
+[`references/surreale.md`](.claude/skills/linkedin-cringe/references/surreale.md).
 
 Italian is the default, but cringe is not an Italian phenomenon: ask for
 another language and the skill **regenerates from the modules** instead of
@@ -90,9 +107,9 @@ too), or the pasted text, or a screenshot, and you get:
   5-6 annoying, 7-8 embarrassing, 9 unbearable, 10 legendary), with the
   event → moral gap in one line;
 - the **modules it hits**, each with the quote from the post that proves it;
-- the **register** (believable, parody, or *declared cringe* when there is a
-  disclaimer line), **AI flavor** (low/medium/high), **lead-gen** and where it
-  hides;
+- the **register** (believable, parody, surreal deadpan, or *declared cringe*
+  when there is a disclaimer line), **AI flavor** (low/medium/high),
+  **lead-gen** and where it hides;
 - a one-line **verdict**, blastometer-style but about cringe;
 - **what's missing to climb one level**, which is the bridge back to the
   generator;
@@ -199,7 +216,7 @@ one *you* wrote in 2019 that still keeps you up at night. Open an
 [issue](https://github.com/matteobaccan/LinkedInCringe/issues) with the text
 (anonymized: no real names, no recognizable companies), tell us whether it
 was found in the wild or self-produced, and — if you dare — guess its level
-and modules. If it fits none of the 36, you may have just discovered `C37`.
+and modules. If it fits none of the 37, you may have just discovered `C38`.
 Accepted submissions land in [`community/`](community/).
 
 ## Thanks

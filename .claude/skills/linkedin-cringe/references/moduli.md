@@ -7,7 +7,9 @@ Fonti: osservazione diretta dei pattern ricorrenti su LinkedIn Italia, più il
 collaudo sul campo di due post pubblicati (agosto 2026), i cui commenti sono
 stati analizzati con la skill gemella `linkedin-cringe-analytics`. Dove un
 modulo cita numeri, vengono da lì. I moduli C34-C36 vengono dall'osservazione di
-post reali raccolti da community che collezionano cringe (agosto 2026).
+post reali raccolti da community che collezionano cringe (agosto 2026). Il C37
+nasce invece da un uso della skill: un post surreale su un fatto di cronaca
+(agosto 2026), da cui è stato ricavato il registro descritto in `surreale.md`.
 
 ---
 
@@ -159,6 +161,26 @@ vestito", "lucidità", "restituzione", "la mia gente".
 **Marcatore:** la frase "sono io che scelgo", in una qualunque delle sue forme, e la
 confessione che "qualcosa dentro di me è cambiato" davanti a un cliente con gli occhi
 lucidi.
+
+### C37: Onirico deadpan
+Il fatto raccontato è impossibile e la voce non se ne accorge mai. È il modulo del
+registro surreale: se il registro è quello, `C37` c'è sempre, anche senza che l'utente
+lo chieda.
+**Meccanismo:** lo scarto della tassonomia portato al massimo. La morale aziendale non
+viene incollata su un evento banale ma su un evento che non può essere successo, e il
+tono resta quello del post motivazionale del lunedì.
+**Repertorio:** il doppio (qualcosa nella scena è l'autore), la parola detta al
+contrario e mai fatta ripetere, il ronzio elettrico da cui le cose entrano ed escono,
+l'animale che dà un feedback invece di caricare, l'oggetto domestico fuori posto (la
+sedia di plastica in mezzo al lago), gli orari precisi che non si sommano, la figura
+che non alza la testa e parla per sentenze, la presenza negata ("non c'era, nel senso
+che c'è ancora").
+**Regole:** due o tre elementi per post, tutti appartenenti alla stessa fisica; niente
+spiegazione e niente risoluzione; il contorno resta banale e verificabile (è la sedia
+*bianca di plastica* che fa esistere il lago); il formato del post non si deforma mai.
+**Marcatore:** l'impossibile viene nominato con la stessa intonazione del traffico.
+**Errore da evitare:** la battuta. Se una riga è costruita per far ridere, il post è
+scivolato in parodico. Vedi `surreale.md` per le otto regole e la diagnosi.
 
 ---
 

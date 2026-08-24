@@ -32,9 +32,9 @@ Quando la invochi senza parametri, la skill ti fa quattro domande:
 | Domanda | Opzioni |
 |---|---|
 | **Livello di cringe** | 4 lieve · 7 imbarazzante · 9 insostenibile · 10 leggendario |
-| **Credibilità** | credibile (deve passare per vero) · parodico (satira dichiarata) |
+| **Registro** | credibile (deve passare per vero) · parodico (satira dichiarata) · surreale deadpan (il mondo è impossibile, la voce non se ne accorge) |
 | **Voce** | fuffaguru · founder/CEO · HR/recruiter · boomer con consiglio |
-| **Moduli cringe** | scelta multipla da un catalogo di 36 moduli (`C01`…`C36`) |
+| **Moduli cringe** | scelta multipla da un catalogo di 37 moduli (`C01`…`C37`) |
 
 Se invece scrivi già tutto nella richiesta (`post livello 9, credibile, tema
 smart working, moduli C19 e C02`), salta le domande e genera direttamente.
@@ -56,11 +56,36 @@ Le regole stanno in
 il fatto resta vero, esatto e mai linkato nel corpo, la morale resta sganciata,
 e la riga finale separa il vero dal finto ("La notizia è vera. La lezione no.").
 **Le notizie tragiche si usano solo in registro parodico**: in credibile
-vengono scartate o attenuate al dato aggregato.
+vengono scartate o attenuate al dato aggregato, e il registro surreale non fa
+eccezione (lì la voce è sincera, quindi è peggio, non meglio).
+
+### Il registro surreale
+
+Il terzo valore sull'asse della credibilità, e il più difficile da tenere in
+piedi: **il mondo raccontato è impossibile e la voce non se ne accorge.** Non è
+credibile (nessuno crede a un cervo che esce dal ronzio dei lampioni) e non è
+parodia (non c'è nessuna battuta, la quarta parete resta chiusa). Il tono resta
+quello del post motivazionale del lunedì mattina mentre i fatti smettono di
+funzionare.
+
+Funziona perché le tre condizioni del cringe restano tutte: la sincerità è
+massima, lo scarto è enorme (la morale aziendale incollata su un evento che non
+può essere successo) e il P.S. che vende il percorso arriva puntuale anche
+dentro il sogno.
+
+Si attiva chiedendolo ("alla David Lynch", "surreale", "onirico", "tipo
+sogno"), vive dal livello 7 in su e ha il punto dolce al 9. Le regole stanno in
+[`references/surreale.md`](.claude/skills/linkedin-cringe/references/surreale.md):
+una sola fisica del sogno per post, niente spiegazioni, il concreto che regge
+l'impossibile, il fatto di cronaca come unico punto fermo, e la regola
+controintuitiva sull'immagine, **l'impossibile sta nel soggetto, lo stile resta
+noioso** (mai chiedere al generatore "dreamlike" o "cinematic": la foto che
+sembra arte tradisce quanto la foto patinata). Il file contiene anche le frasi
+che uccidono il registro e una tabella di diagnosi per quando viene male.
 
 ### Il catalogo dei moduli
 
-36 moduli codificati in
+37 moduli codificati in
 [`references/moduli.md`](.claude/skills/linkedin-cringe/references/moduli.md),
 divisi in narrativi, retorici e formali. Alcuni esempi:
 
@@ -79,13 +104,16 @@ divisi in narrativi, retorici e formali. Alcuni esempi:
 - `C35` statistica a sproposito, i morti per il caldo per convincere i genitori
   a mettere il condizionatore in soggiorno
 - `C36` il rifiuto come flex, "sono io che scelgo i clienti"
+- `C37` onirico deadpan, il cervo che invece di caricarti ti dà un feedback
 
 `C32` e `C33` sono nati dall'analisi sul campo: il primo dall'osservazione che
 la sedia rimessa a posto *prima di alzarsi* ha generato thread interi, il
 secondo dal fatto che il 13% dei commenti a un post virale erano correzioni
 serissime sulla RAL. Chi ti corregge ti ha creduto. `C34`-`C36` vengono
 dall'osservazione del cringe che LinkedIn produce ogni giorno, e che qualcuno
-ha la pazienza di raccogliere (vedi i ringraziamenti in fondo).
+ha la pazienza di raccogliere (vedi i ringraziamenti in fondo). `C37` è nato
+invece usando la skill: da un post surreale su un fatto di cronaca è stato
+ricavato il registro descritto in `surreale.md`.
 
 ### Lingue
 
@@ -153,7 +181,8 @@ Sei arrivato in fondo e hai alzato gli occhi al cielo? È una parodia.
 ```
 
 Fastidioso ma sobrio: humblebrag, gratitudine ostentata, morale proporzionata.
-Gli altri livelli (7, 9, 10 e una versione parodica) sono in
+Gli altri livelli (7, 9, 10, una versione parodica, una con gancio reale e una
+surreale) sono in
 [`references/esempi.md`](.claude/skills/linkedin-cringe/references/esempi.md).
 
 > **Nota.** Nessun esempio in questo repository è la trascrizione o il
@@ -225,9 +254,9 @@ Dai a `linkedin-cringe-meter` l'URL di un post LinkedIn (anche uno short link
   con lo scarto evento → morale in una riga;
 - **i ganci presi**: i moduli del catalogo rilevati, ciascuno con la citazione
   del post che lo prova;
-- il **registro** (credibile, parodico, o *cringe dichiarato* se c'è la riga
-  di disclaimer), il **sapore-AI** (bassa/media/alta), la **lead-gen** e dove
-  si nasconde;
+- il **registro** (credibile, parodico, surreale deadpan, o *cringe dichiarato*
+  se c'è la riga di disclaimer), il **sapore-AI** (bassa/media/alta), la
+  **lead-gen** e dove si nasconde;
 - **il verdetto**: una frase secca, stile blastometro ma in tema cringe;
 - **cosa manca per salire** di un livello, che è il ponte col generatore;
 - un report markdown in `analisi/YYYY-MM-DD-<tema>/cringiometro.md` e
@@ -284,8 +313,9 @@ file e si ferma lì.
 │   ├── SKILL.md                    flusso, domande, regole, paletti
 │   └── references/
 │       ├── tassonomia.md           definizione del cringe, scala 1-10
-│       ├── moduli.md               catalogo dei 36 moduli C01-C36
+│       ├── moduli.md               catalogo dei 37 moduli C01-C37
 │       ├── attualita.md            il gancio reale: cringe ispirato ai fatti
+│       ├── surreale.md             il registro deadpan: regole, repertorio, diagnosi
 │       ├── lessico.md              itanglese, formule, hashtag, altre lingue
 │       └── esempi.md               post calibrati sui livelli 4, 7, 9, 10
 ├── linkedin-cringe-analytics/      analisi
@@ -431,7 +461,7 @@ del post, o direttamente una PR su `esempi.md`. Regole di ingaggio:
   il cringe autoprodotto consapevole è ricerca);
 - se vi va, azzardate **livello 1-10 e moduli** che ci vedete, o passatelo
   prima al Cringiometro e allegate l'immagine: se il post non rientra in
-  nessuno dei 36, potreste aver appena scoperto il C37.
+  nessuno dei 37, potreste aver appena scoperto il C38.
 
 I post accettati finiscono in [`community/`](community/), i migliori negli
 esempi della skill, e i pattern nuovi diventano moduli del catalogo. Il

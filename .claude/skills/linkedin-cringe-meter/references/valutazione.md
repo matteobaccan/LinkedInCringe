@@ -2,7 +2,7 @@
 
 La scala e i moduli sono quelli della skill gemella `linkedin-cringe`:
 `../../linkedin-cringe/references/tassonomia.md` (definizione, legge dello scarto,
-scala 1-10) e `moduli.md` (il catalogo, C01-C36). Leggili prima di valutare: il
+scala 1-10) e `moduli.md` (il catalogo, C01-C37). Leggili prima di valutare: il
 Cringiometro misura con lo stesso metro con cui il generatore scrive, altrimenti i
 due strumenti non si parlano.
 
@@ -49,6 +49,9 @@ Regole pratiche:
 
 - **Credibile**: potrebbe essere vero, e probabilmente lo è. L'autore ci crede.
 - **Parodico**: esagerazione evidente, si capisce che è una presa in giro.
+- **Surreale deadpan**: i fatti raccontati sono impossibili e la voce non se ne
+  accorge, senza nessuna battuta. Non è parodia: la parodia ammicca, qui no. Raro in
+  natura, frequente nei post generati. Vedi `surreale.md` della skill gemella.
 - **Cringe dichiarato**: c'è una riga finale che svela lo scherzo, o un'indicazione
   esplicita di satira. Tipico dei post generati con `linkedin-cringe`. Va detto
   con naturalezza, senza prendersela: il Cringiometro valuta il post come sta, e
@@ -59,7 +62,7 @@ Regole pratiche:
 Scorri il catalogo per sezioni, in quest'ordine, e annota codice + citazione:
 
 1. **Formali** (C21, C22, C23, C10, C24, C30, C31, C34): si vedono a colpo d'occhio.
-2. **Narrativi** (C01-C05, C09, C14, C15, C17-C20, C25-C29, C32, C36): qual è la
+2. **Narrativi** (C01-C05, C09, C14, C15, C17-C20, C25-C29, C32, C36, C37): qual è la
    struttura del racconto? Di solito ce n'è uno dominante e uno o due di contorno.
 3. **Retorici** (C06-C08, C11-C13, C16, C33, C35): come argomenta?
 

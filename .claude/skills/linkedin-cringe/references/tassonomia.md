@@ -67,6 +67,19 @@ Esagerazione dichiarata: si capisce che è una presa in giro. Si concede iperbol
 impossibili, numeri assurdi, accumulo di moduli incompatibili, finali che rompono la
 quarta parete. Piu' facile da scrivere, meno interessante.
 
+### Surreale deadpan
+Il mondo raccontato è impossibile e la voce non se ne accorge. Non è credibile
+(nessuno crede a un cervo che esce dal ronzio dei lampioni) e non è parodico (non c'è
+nessuna battuta, la quarta parete resta chiusa). Il tono resta quello del post
+motivazionale del lunedì mattina mentre i fatti smettono di funzionare.
+
+Le tre condizioni del cringe restano tutte: la sincerità è massima, lo scarto è enorme
+perché la morale aziendale viene incollata su un evento che non può essere successo, e
+il P.S. che vende il percorso arriva puntuale anche dentro il sogno.
+
+Vive dal livello 7 in su, il punto dolce è il 9. Regole, repertorio, effetti sui
+moduli e diagnosi degli errori: `surreale.md`.
+
 ## Cosa tradisce la finzione (evitare in modalità credibile)
 
 - Ironia, ammicco, autoironia

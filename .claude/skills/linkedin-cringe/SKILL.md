@@ -1,6 +1,6 @@
 ---
 name: linkedin-cringe
-description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), credibilità (deve passare per vero / parodia dichiarata) e moduli cringe scelti da un catalogo di 36, con la possibilità di partire da un fatto reale (una notizia data dall'utente o cercata dalla skill). Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, un post "ispirato all'attualità", oppure vuole parodiare lo stile LinkedIn.
+description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), registro (credibile / parodico / surreale deadpan alla Lynch) e moduli cringe scelti da un catalogo di 37, con la possibilità di partire da un fatto reale (una notizia data dall'utente o cercata dalla skill). Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, un post "ispirato all'attualità", un post surreale o onirico "alla David Lynch", oppure vuole parodiare lo stile LinkedIn.
 ---
 
 # LinkedIn Cringe: generatore di post
@@ -36,10 +36,13 @@ Altrimenti mostra prima il **menu dei moduli**: elenco compatto, codice + nome, 
 - `9` Insostenibile: screenshottabile, il tipo di post che gira nelle chat
 - `10` Leggendario: tutti i tic insieme, oltre il limite del sopportabile
 
-**D2. Credibilità** (`header: "Registro"`)
+**D2. Registro** (`header: "Registro"`)
 - `Credibile (consigliato)`: deve poter passare per un post vero, pescato dal feed.
   Nessuna esagerazione che tradisca la finzione.
 - `Parodico`: esagerazione dichiarata, si capisce che è una presa in giro
+- `Surreale deadpan`: il mondo raccontato è impossibile e la voce non se ne accorge.
+  Né credibile né parodico, nessuna battuta. Vive dal livello 7 in su, il punto dolce
+  è il 9
 
 **D3. Voce** (`header: "Voce"`)
 - `Fuffaguru mindset`: coach/consulente che vende crescita personale
@@ -56,6 +59,14 @@ Quattro combo pronte; l'utente può usare "Other" per scrivere i codici del cata
 - `Pacchetto completo`: scegli tu i moduli coerenti col livello
 
 Se manca il tema, chiedilo a parte in chat con una riga, non con AskUserQuestion.
+
+**Registro surreale (opzionale).** Si attiva da solo quando l'utente scrive "alla David
+Lynch", "surreale", "onirico", "tipo sogno", "assurdo ma serio", o descrive una scena
+che non può essere successa: in quel caso non chiedere il registro, dallo per scelto e
+porta il livello di default a 9. Prima di scrivere leggi `references/surreale.md`:
+contiene le otto regole, il repertorio, cosa cambia nei moduli, le frasi che uccidono
+il registro e la diagnosi degli errori. È il registro dove la voce sincera conta più
+che altrove, e dove il fatto reale (se c'è) resta l'unico punto fermo del post.
 
 **Gancio reale (opzionale).** Il tema può venire dalla cronaca invece che dalla
 fantasia: è quello che fa una buona fetta del cringe vero. Si attiva quando l'utente
@@ -92,6 +103,10 @@ Consulta `references/moduli.md`. Numero di moduli in base al livello:
 
 I moduli scelti dall'utente hanno la precedenza; aggiungine altri per arrivare al conto.
 
+In registro surreale `C37` (onirico deadpan) è sempre incluso e non conta nel totale:
+è il registro fatto modulo. Sotto il livello 7 il registro surreale non si usa, non c'è
+abbastanza post intorno al sogno perché il contrasto si veda.
+
 ### 3. Scrivi il post
 
 Struttura canonica (modulo C21):
@@ -118,7 +133,13 @@ svolta, chiusure, nomi di fantasia, pool di hashtag ed emoji.
 banale e la morale è cosmica, più alto il cringe. Non alzare il livello aggiungendo
 emoji: alza lo scarto.
 
-Consulta `references/esempi.md` per sentire come suonano i livelli 4, 7, 9 e 10.
+Consulta `references/esempi.md` per sentire come suonano i livelli 4, 7, 9 e 10, la
+versione parodica e quella surreale.
+
+In registro surreale la leva è la stessa, applicata più in là: l'evento non è banale,
+è impossibile, e la morale aziendale ci viene incollata sopra con lo stesso tono di
+sempre. Il formato del post non si deforma mai (`references/surreale.md`, regola 2) e
+nessuna riga viene costruita per far ridere (regola 7).
 
 Se il post ha un gancio reale, le cifre e le date del fatto restano quelle della fonte
 (niente C13 sul fatto: i numeri finti-precisi vanno sulle misurazioni dell'autore), il
@@ -186,6 +207,12 @@ In registro parodico o ai livelli 9-10 vale l'inverso: l'incongruenza fotografic
 intenzionale è un'esca eccellente (C24), e i commenti che la smontano fanno parte
 dello spettacolo.
 
+In registro surreale la regola è ancora diversa, ed è controintuitiva: **l'impossibile
+sta nel soggetto, lo stile resta noioso.** Una sola anomalia visiva, la stessa del
+testo, fotografata malissimo come si fotografa una cosa qualunque. Mai chiedere al
+generatore "surreal, dreamlike, ethereal, cinematic, David Lynch style": la foto che
+sembra arte tradisce quanto la foto patinata. Dettagli in `references/surreale.md`.
+
 ### Il prompt d'immagine
 
 In consegna la skill propone sempre un prompt pronto per un generatore di immagini.
@@ -208,6 +235,8 @@ Regole di costruzione:
   se serve una figura, di spalle o mani soltanto.
 - Ai livelli 9-10 o in registro parodico, ribalta: un'incongruenza visiva piantata
   (C24 o C32 fotografico) è legittima e va dichiarata all'utente.
+- In registro surreale l'anomalia è obbligatoria, ma una sola, e va dichiarata:
+  l'oggetto-esca impossibile ripreso come si riprende una tazza.
 - Chiudi il prompt con l'aspect ratio (4:5 o 1:1, i formati del feed).
 
 ## Riga finale di disclaimer
@@ -236,6 +265,11 @@ Con un gancio reale la riga deve separare il vero dal finto ("La notizia è vera
 lezione no."): altrimenti chi scopre lo scherzo butta via anche il dato. Se l'utente
 vuole citare la fonte, il link va qui, non nel corpo.
 
+In registro surreale la riga separa il vero dal sogno ("La notizia è vera. Il cervo
+no.") ma **non spiega il sogno**: può dire che è satira, non può fare da didascalia.
+Spiegare cosa volesse dire la figura enigmatica è l'unica forma di ammicco che quel
+registro non sopporta.
+
 
 ## Paletti
 
@@ -249,5 +283,9 @@ Valgono anche quando il registro è "credibile", anzi, soprattutto lì:
   (trauma mining) si usa solo con eventi palesemente inventati, e va segnalato.
 - **Notizie tragiche come gancio reale solo in registro parodico.** In credibile si
   scartano o si attenuano al dato aggregato. Dettagli in `references/attualita.md`.
+- **Il registro surreale non sblocca le tragedie**, anzi: la voce sincera rende un
+  post onirico su un lutto reale più sgradevole di uno parodico, perché nel testo non
+  c'è nessuna dichiarazione di finzione a cui aggrapparsi. E nessuna persona reale
+  entra nella scena onirica: chi compare nella notizia resta nella notizia.
 - Se l'utente vuole pubblicarlo davvero, ricordagli una volta che è un post finto,
   poi fai quello che chiede.

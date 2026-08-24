@@ -101,6 +101,12 @@ poche ore, e invece di "che cringe" si legge "è falso", che è peggio.
 - **Dettaglio d'epoca.** Il fatto reale dà gratis il "dettaglio concreto e inutile" che
   serve a suonare umani: il giorno della settimana, il luogo della conferenza, il
   nome dell'ente. Usane uno, non tutti.
+- **In registro surreale il fatto non sogna.** È l'unico punto fermo del post: si
+  racconta con precisione da agenzia, cifre e luoghi esatti, e solo dopo comincia il
+  sogno. Se anche la cronaca diventa strana, il lettore perde l'appiglio e chiude.
+  Ne discende che l'errore piantato (`C32`), se c'è, va messo lì: una data, un giorno
+  della settimana, un orario che non torna con la notizia. Dentro il sogno non c'è
+  niente di verificabile, quindi non c'è niente da smontare. Vedi `surreale.md`.
 
 ---
 
@@ -130,7 +136,9 @@ Si sommano ai paletti di SKILL.md.
   dichiarata e il bersaglio è chi lo fa sul serio. Quando scarti un gancio tragico in
   credibile, dillo in una riga e proponi l'**attenuazione**: il dato aggregato al posto
   dell'evento nominato (il rapporto annuale sul caldo, non l'ondata con le vittime di
-  ieri; la statistica sugli infortuni, non l'incidente di stamattina).
+  ieri; la statistica sugli infortuni, non l'incidente di stamattina). **Il registro
+  surreale non fa eccezione e non vale come parodico:** lì la voce è sincera, quindi un
+  post onirico su una tragedia vera è peggio, non meglio.
 - **Persone pubbliche.** Si possono citare per il fatto pubblico che le riguarda
   (ha detto, ha vinto, ha annunciato), con le parole che hanno detto davvero. Mai
   attribuire frasi inventate, mai un C04 con una persona reale, mai un incontro

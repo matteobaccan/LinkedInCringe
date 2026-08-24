@@ -41,7 +41,7 @@ Post valutato il YYYY-MM-DD · testo di N parole · immagine allegata: sì/no
 
 Due righe di motivazione: lo scarto e il peso dei moduli.
 
-**Registro:** credibile / parodico / cringe dichiarato (una riga sul perché)
+**Registro:** credibile / parodico / surreale deadpan / cringe dichiarato (una riga sul perché)
 **Lo scarto:** [evento] → [morale]
 
 ## 🧩 Moduli rilevati

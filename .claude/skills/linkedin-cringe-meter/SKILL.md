@@ -1,6 +1,6 @@
 ---
 name: linkedin-cringe-meter
-description: Il Cringiometro. Dato l'URL (o il testo) di un post LinkedIn, ne misura il livello di cringe da 1 a 10 con la scala e il catalogo dei 36 moduli della skill linkedin-cringe, dice quali ganci ha preso, il registro, il sapore-AI e la lead-gen, e produce un report markdown più un'immagine 1080x1080 anonima, pronta da usare come risposta sotto al post. Usala quando l'utente chiede "quanto è cringe questo post", "misura / valuta / cringiometro", o vuole un'immagine di risposta stile blastometro.
+description: Il Cringiometro. Dato l'URL (o il testo) di un post LinkedIn, ne misura il livello di cringe da 1 a 10 con la scala e il catalogo dei 37 moduli della skill linkedin-cringe, dice quali ganci ha preso, il registro, il sapore-AI e la lead-gen, e produce un report markdown più un'immagine 1080x1080 anonima, pronta da usare come risposta sotto al post. Usala quando l'utente chiede "quanto è cringe questo post", "misura / valuta / cringiometro", o vuole un'immagine di risposta stile blastometro.
 ---
 
 # Cringiometro: quanto è cringe questo post
@@ -50,7 +50,7 @@ Leggi `references/valutazione.md` e, attraverso i suoi rimandi, `tassonomia.md` 
 gemella non c'è, fermati e dillo: senza catalogo non c'è metro.
 
 Produci, nell'ordine: livello 1-10 con la parola della scala, registro (credibile /
-parodico / cringe dichiarato), lo scarto in una riga, i moduli rilevati con una
+parodico / surreale deadpan / cringe dichiarato), lo scarto in una riga, i moduli rilevati con una
 citazione breve ciascuno (massimo 8, in ordine di peso), l'eventuale gancio reale,
 sapore-AI, lead-gen, il verdetto in una frase, e i moduli che mancano per salire di
 un livello.
