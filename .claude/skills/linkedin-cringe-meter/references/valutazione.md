@@ -56,6 +56,9 @@ Regole pratiche:
   esplicita di satira. Tipico dei post generati con `linkedin-cringe`. Va detto
   con naturalezza, senza prendersela: il Cringiometro valuta il post come sta, e
   la riga di disclaimer non abbassa il livello del corpo che la precede.
+- **AI-SLOP**: il post non ha un autore. Nessun dettaglio concreto, paragrafi tutti
+  uguali, triadi, "non è X, è Y" in serie, e spesso gli asterischi del markdown
+  rimasti nel testo. Vedi `slop.md` della skill gemella.
 
 ## 3. I moduli (i ganci)
 
@@ -88,6 +91,12 @@ uniformemente medio-alto.
 - **Alta**: tre o più indizi e nessuna sbavatura. Probabile C12 involontario.
 
 Non è un'accusa: è un'osservazione sul testo, e nel report si scrive così.
+
+**Sapore-AI alta e registro AI-SLOP non sono la stessa cosa.** Il sapore-AI misura il
+testo; il registro è un giudizio sulla paternità. "Alta" con registro credibile vuol
+dire che c'è una persona che scrive levigato. AI-SLOP vuol dire che dietro non c'è
+nessuno: sapore-AI alta **e** zero dettagli concreti **e** nessuna opinione riconoscibile.
+Nel dubbio si resta su credibile con sapore-AI alta, che è l'ipotesi meno accusatoria.
 
 ## 5. Lead-gen
 

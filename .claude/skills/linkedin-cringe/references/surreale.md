@@ -83,11 +83,23 @@ il contrasto si veda.
 
 | Livello | Come si comporta il surreale |
 |---|---|
-| 7 | una crepa sola: il post sembra normale, un dettaglio non torna e non viene mai ripreso |
+| 7 | una crepa sola: il post sembra normale, un dettaglio non torna e non viene mai ripreso. Ottimo da collaudo, debole nel feed: vedi la nota qui sotto |
 | 9 | il sogno occupa metà del post, la struttura cringe resta intatta. È il punto dolce del registro |
 | 10 | rischio di collasso in parodico: se si sale, salgano i tic formali (emoji-bullet, muro di hashtag, MAIUSCOLO), non il numero di anomalie |
 
 Default consigliato: **9**.
+
+**Registro e distribuzione sono due obiettivi diversi.** Il 7 surreale e' la
+configurazione piu' pulita del registro e la meno diffusa dall'algoritmo: la crepa
+unica o passa inosservata o lascia un disagio vago, e in nessuno dei due casi da'
+a chi legge qualcosa da fare. Misurato ad agosto 2026: un post surreale di livello 7
+su tema fuori nicchia si e' fermato a poche decine di impressioni nella prima mezz'ora,
+mentre i post credibili di livello 7-9 dello stesso autore stavano fra 48mila e 152mila.
+
+Se l'utente vuole il surreale **e** vuole che giri, la strada non e' abbassare il
+livello ma alzarlo a 9 e tenere C33 acceso nella parte reale del post. Se invece
+vuole il registro nella sua forma piu' pura, il 7 va benissimo, e va detto che
+costa distribuzione.
 
 ---
 

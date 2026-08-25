@@ -10,6 +10,9 @@ modulo cita numeri, vengono da lì. I moduli C34-C36 vengono dall'osservazione d
 post reali raccolti da community che collezionano cringe (agosto 2026). Il C37
 nasce invece da un uso della skill: un post surreale su un fatto di cronaca
 (agosto 2026), da cui è stato ricavato il registro descritto in `surreale.md`.
+I moduli C38-C44 vengono da un secondo giro di osservazione sulle stesse
+community (agosto 2026), su un campione di sessanta post raccolti fra il 30
+luglio e il 25 agosto.
 
 ---
 
@@ -141,7 +144,13 @@ abbastanza concreta da far scattare chi legge con attenzione.
 alzarsi": almeno 6 commentatori l'hanno notato, ci è nato un thread, e un lettore
 in buona fede ha difeso il post citandone il testo contro i dubbiosi.
 **Regole:** una sola per post; riguarda la fisica o la cronologia dei fatti, mai
-la morale; la voce non la corregge e non ci torna sopra.
+la morale; la voce non la corregge e non ci torna sopra; **sta dentro la frase che
+regge la morale**, e si becca rileggendo una riga, non aprendo l'immagine.
+**Dove metterlo, misurato (agosto 2026):** errore nel testo e nella frase portante,
+il commento che lo becca prende 26 reazioni e sette risposte; lo stesso modulo
+spostato nella foto (l'abbigliamento fuori stagione, la foto che esiste in un post
+che dice "niente telefono") prende 1 o 2 reazioni. Un errore che richiede lo zoom
+vale un decimo di un errore che si vede rileggendo.
 **Effetto:** engagement logico-forense ("ma come ha fatto a…?") che tiene vivo il
 thread senza svelare la satira.
 
@@ -182,6 +191,67 @@ spiegazione e niente risoluzione; il contorno resta banale e verificabile (è la
 **Errore da evitare:** la battuta. Se una riga è costruita per far ridere, il post è
 scivolato in parodico. Vedi `surreale.md` per le otto regole e la diagnosi.
 
+### C40: Il nonnismo manageriale
+La micro-crudeltà sul nuovo assunto raccontata con soddisfazione, come prova di standard alti.
+**Meccanismo:** è l'inverso esatto di C02. Lì un micro-gesto rivela il valore del candidato
+e premia la sensibilità di chi scrive; qui un micro-dettaglio viene punito, e la punizione
+viene esibita come formazione. La morale non è "ho visto una cosa che gli altri non vedono",
+è "gliel'ho fatta capire".
+**Materiali:** le scarpe sbagliate al colloquio, il "non ho tempo per stargli appresso",
+la scrivania assegnata di proposito lontana, il primo giorno senza nessuno che spieghi
+niente ("così impara"), il saluto non ricambiato come test, la domanda a cui non si risponde.
+**Attacco tipo:** "Ieri è passato in ufficio a fare il suo primo giorno un analista."
+**Marcatore:** i puntini di sospensione al posto della morale. "Penso abbia capito..."
+La lezione non viene mai enunciata, e questo è il punto: chi scrive dà per scontato
+che chi legge approvi.
+**Errore da evitare:** far pentire la voce, o farle spiegare perché lo ha fatto. Il modulo
+regge solo se il compiacimento resta intatto fino all'ultima riga.
+
+### C41: Il confronto a due colonne
+Due persone inventate, due elenchi paralleli, una domanda retorica in fondo.
+**Meccanismo:** l'elenco sembra un confronto e invece è una sentenza. Le voci delle due
+colonne sono scelte una per una perché la conclusione arrivi da sola, e la domanda finale
+finge di lasciarla al lettore.
+**Costruzione tipo:** due nomi propri e due età, sei o sette voci a testa nello stesso
+ordine (stipendio, titolo di studio, contratto, casa, tempo libero, una frase fra virgolette),
+e la chiusa "Chi ha fatto il miglior investimento?" con un'emoji di sospetto.
+**Materiali:** il laureato contro il diplomato, chi è partito contro chi è rimasto, il
+dipendente contro la partita IVA, chi ha fatto il master contro chi ha fatto la gavetta.
+**Marcatore:** la frase fra virgolette in fondo alla colonna vincente, che nessuno ha
+mai pronunciato e che chiude il discorso.
+**L'immagine:** questo modulo viene quasi sempre col suo grafico, due riquadri affiancati
+con i nomi e le età impressi sopra. Vedi la sezione *Immagini* in SKILL.md: il testo
+impresso è un tell, e qui è voluto.
+**Errore da evitare:** rendere il confronto onesto. Se una colonna ha anche un solo
+svantaggio vero, il modulo si spegne.
+
+### C43: Il flex rinnegato
+L'oggetto di status comprato, la morale contro l'inseguire lo status, e la foto dell'oggetto.
+**Meccanismo:** il testo rinuncia a quello che l'immagine consegna. Non è C24 (la foto
+scollegata): qui la foto è fin troppo collegata, ed è l'unica parte del post che dice
+la verità.
+**Costruzione tipo:** la promozione, il regalo che doveva "ricordare il momento", il
+capitolo di ripensamento ("con il tempo ho capito perché"), la lezione sull'approvazione
+degli altri, e in fondo l'oggetto fotografato al polso, sul cofano, sulla scrivania.
+**Materiali:** l'orologio, l'auto elettrica, il primo ufficio con la vetrata, la business
+class, la casa comprata cash.
+**Marcatore:** "Mi ha lasciato anche una lezione." La lezione arriva dopo l'acquisto,
+mai prima, e non ha mai portato a rivendere niente.
+**Errore da evitare:** togliere la foto. Senza l'immagine il post diventa sobrio e il
+modulo sparisce: il cringe sta nella contraddizione fra le due, non nel testo.
+
+### C44: Il figlio-content
+Una cosa privata di un figlio diventa materiale da post, col permesso dichiarato in anticipo.
+**Meccanismo:** C29 (dichiarazione preventiva di purezza) applicato al consenso. La voce
+mette le mani avanti su un'obiezione che nessuno ha ancora fatto, e così la nomina per prima.
+**Costruzione tipo:** la frase o l'idea del figlio, la spiegazione paterna che occupa il
+triplo delle righe, "mi ha dato il permesso di raccontarvi tutto", la foto dell'oggetto,
+e la CTA che chiede alla rete di dare consigli al minore.
+**Marcatore:** il permesso citato esplicitamente, e la CTA che trasforma il figlio in
+un thread.
+**Paletti:** il figlio è sempre inventato, non ha nome, non è riconoscibile, e non
+compare nell'immagine. Vale il paletto di SKILL.md sulle persone reali, senza eccezioni.
+
 ---
 
 ## B. Moduli retorici (come si argomenta)
@@ -216,6 +286,13 @@ prima, e i lettori lo sanno), lo smart working chiesto al colloquio letto come
 pigrizia, le ferie mai prese come dedizione, il periodo di prova gratis come gavetta.
 **Effetto misurato:** il filone correttivo-normativo vale ~13% dei commenti di un
 post virale, tutto engagement in buona fede.
+**Secondo collaudo (agosto 2026), su quattro post pubblicati:** C33 c'e' in tutti e tre
+quelli sopra le 48mila impressioni e manca nell'unico rimasto piatto. In tutti e tre il
+commento piu' votato del thread e' la correzione del nervo scoperto (64, 67 e 26
+reazioni), non un commento dell'autore. **In registro credibile sopra il livello 7, se
+l'obiettivo e' la distribuzione, C33 va considerato obbligatorio.** Un post senza nervo
+scoperto non da' a nessuna categoria professionale un motivo per intervenire, per quanti
+altri moduli abbia.
 **Regole:** l'errore è di prassi o di norma, riconoscibile da un professionista del
 tema, mai un'assurdità; la voce lo rivendica con orgoglio e non risponde alle
 correzioni.
@@ -252,6 +329,55 @@ Il sacrificio esibito come virtù e il riposo come colpa.
 l'allenamento prima dell'alba, il conteggio delle ore di sonno, le ferie non prese come
 vanto, il lavoro nei giorni festivi normalizzato, la disciplina contrapposta alla
 motivazione, il paragone implicito con chi legge ("mentre tu dormivi").
+
+### C38: L'etimologia motivazionale
+Una parola inglese dichiarata intraducibile regge un intero sermone sulla leadership.
+**Meccanismo:** la parola prende il posto dell'argomento. Non si dimostra niente, si
+sostiene che l'italiano non abbia un termine equivalente, e da quella mancanza si ricava
+una superiorità di sguardo. Parente di C28 (di cui è il marcatore "Y è X detto in inglese"),
+ma lì la parola è il condimento, qui è la struttura portante.
+**Costruzione tipo:** "C'è una parola inglese che non ha una vera traduzione in italiano,
+ma il suo significato è fondamentale nel lavoro e nella vita." Poi la parola, poi la
+falsa etimologia, poi la scaletta a livelli numerati, poi "in azienda lo ripeto in
+continuazione ai miei collaboratori".
+**Materiali:** agency, ownership, accountability, grit, craft, care, kaizen, ikigai,
+hygge, sisu, meraki.
+**Marcatore:** l'affermazione che la parola non si può tradurre, seguita subito da una
+traduzione in due righe.
+**Sotto-variante, il modellino a livelli:** una piramide o una scala a cinque o sei
+gradini, vista da un'altra parte e ripostata come propria, con i livelli numerati da
+zero. "La maggior parte delle persone resta bloccata tra zero e due."
+**Errore da evitare:** scegliere una parola che in italiano davvero non c'è. Il modulo
+vive sul fatto che la traduzione esiste ed è banale.
+
+### C39: La scienza generica
+L'autorità vaga al posto della fonte.
+**Meccanismo:** è il rovescio di C13. Lì la precisione decimale su misurazioni impossibili;
+qui l'imprecisione totale su un'autorità che non si può controllare. Nessun nome, nessuna
+data, nessuna rivista: sempre il plurale, sempre il presente.
+**Materiali:** "come ogni studio sul comportamento umano dimostra", "le neuroscienze
+ce lo dicono da anni", "è ormai dimostrato che", "tutte le ricerche concordano",
+"i dati parlano chiaro", "la psicologia del lavoro lo sa bene".
+**Variante apocrifa:** l'aforisma attribuito a un autore vero che non l'ha mai scritto,
+introdotto da "la celeberrima". Confina con C08: la differenza è che C08 cita una frase,
+C39 cita un intero campo del sapere.
+**Marcatore:** i due punti dopo l'appello all'autorità, e subito dopo un'ovvietà.
+"E come ogni studio sul comportamento umano dimostra: le persone rispondono agli incentivi."
+**Errore da evitare:** citare uno studio vero. Basta un nome e una data e il modulo
+diventa un post normale.
+
+### C42: Il titolo negato
+Il rifiuto del titolo scritto da chi il titolo ce l'ha nell'intestazione.
+**Meccanismo:** innesto di C11 (umiltà ostentata), C29 (purezza preventiva) e C08
+("non è X, è Y"). La negazione funziona come rivendicazione: per dire che il titolo non
+conta bisogna nominarlo, e nominarlo è tutto il punto.
+**Costruzione tipo:** "X non è un titolo. È una condizione." Poi l'elenco completo delle
+sigle che si dice di rifiutare (CEO, COO, CTO, CLO), poi il racconto di come nelle realtà
+piccole i confini fra i ruoli non esistano, poi la firma con il ruolo.
+**Marcatore:** la contraddizione fra il corpo del post e l'headline, che resta lì sopra
+per tutta la lettura e non viene mai toccata.
+**Errore da evitare:** far togliere il titolo alla voce. La voce non rinuncia a niente,
+spiega solo che a lei non interessa.
 
 ---
 

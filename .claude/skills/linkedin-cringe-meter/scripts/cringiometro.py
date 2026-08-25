@@ -7,7 +7,7 @@ Uso:
 dati.json:
     {
       "score": 7,                      # 1-10, interi o mezzi (7.5)
-      "register": "credibile",         # credibile | parodico | dichiarato
+      "register": "credibile",         # credibile | parodico | surreale | slop | dichiarato
       "modules": [                     # max 8, in ordine di importanza
         {"code": "C01", "name": "Parabola forzata"},
         {"code": "C13", "name": "Numeri finti-precisi"}
@@ -43,31 +43,36 @@ LANGS = {
     "it": {
         "title": "CRINGIOMETRO",
         "register": {"credibile": "registro credibile", "parodico": "registro parodico",
-                     "dichiarato": "cringe dichiarato"},
+                     "dichiarato": "cringe dichiarato",
+                     "surreale": "registro surreale", "slop": "scritto dall'AI"},
         "words": ["innocuo", "lieve", "fastidioso", "imbarazzante", "insostenibile", "leggendario"],
     },
     "en": {
         "title": "CRINGE METER",
         "register": {"credibile": "believable register", "parodico": "parody register",
-                     "dichiarato": "declared cringe"},
+                     "dichiarato": "declared cringe",
+                     "surreale": "deadpan surreal", "slop": "AI slop"},
         "words": ["harmless", "mild", "annoying", "embarrassing", "unbearable", "legendary"],
     },
     "de": {
         "title": "CRINGEOMETER",
         "register": {"credibile": "glaubwürdig", "parodico": "Parodie",
-                     "dichiarato": "erklärter Cringe"},
+                     "dichiarato": "erklärter Cringe",
+                     "surreale": "surreal deadpan", "slop": "KI-Schrott"},
         "words": ["harmlos", "leicht", "nervig", "peinlich", "unerträglich", "legendär"],
     },
     "fr": {
         "title": "CRINGEOMÈTRE",
         "register": {"credibile": "registre crédible", "parodico": "registre parodique",
-                     "dichiarato": "cringe assumé"},
+                     "dichiarato": "cringe assumé",
+                     "surreale": "registre surréaliste", "slop": "bouillie IA"},
         "words": ["anodin", "léger", "agaçant", "gênant", "insoutenable", "légendaire"],
     },
     "es": {
         "title": "CRINGÓMETRO",
         "register": {"credibile": "registro creíble", "parodico": "registro paródico",
-                     "dichiarato": "cringe declarado"},
+                     "dichiarato": "cringe declarado",
+                     "surreale": "registro surrealista", "slop": "morralla de IA"},
         "words": ["inocuo", "leve", "molesto", "vergonzoso", "insoportable", "legendario"],
     },
 }

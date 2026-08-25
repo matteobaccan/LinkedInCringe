@@ -27,9 +27,9 @@ text doesn't have, and is selling something while pretending to sell nothing.
 
 Invoked bare, the skill asks four questions: **cringe level** (4 mild ·
 7 embarrassing · 9 unbearable · 10 legendary), **register** (believable,
-declared parody, or surreal deadpan), **voice** (hustle guru, founder/CEO,
-HR/recruiter, boomer with advice), and which of the **37 cringe modules**
-(`C01`…`C37`)
+declared parody, surreal deadpan, or AI-SLOP), **voice** (hustle guru,
+founder/CEO, HR/recruiter, boomer with advice), and which of the
+**44 cringe modules** (`C01`…`C44`)
 to build on — forced parables, moralistic plot twists, strategic
 vulnerability, toxic hustle, fake-precise numbers, broetry, planted logical
 errors, hour-by-hour diaries, out-of-scale statistics, and more. Spell
@@ -61,6 +61,28 @@ style stays boring** (never prompt "dreamlike" or "cinematic"; a photo that
 looks like art gives it away as much as a glossy one). Rules, repertoire,
 banned phrases and a diagnosis table in
 [`references/surreale.md`](.claude/skills/linkedin-cringe/references/surreale.md).
+
+The fourth register turns the whole skill upside down: in **AI-SLOP** the post
+has no author at all. It was generated, pasted and published unread, and it
+claims a personal experience nobody had: em dashes, perfect triads, evenly
+sized paragraphs, and the markdown asterisks still sitting in the text because
+LinkedIn does not render them. Not an invented genre: June 2026 measurements
+put 41% of long LinkedIn posts and 30% of comments at model-written, and since
+summer 2026 the platform has a button to report them. **It only activates when
+you ask for it by name** ("write it with AI" does not count, since every post
+here is written with AI and the default is to sound human). Rules and repertoire
+in [`references/slop.md`](.claude/skills/linkedin-cringe/references/slop.md).
+
+Job ads are a format of their own, with three families and a stricter set of
+guardrails, in
+[`references/annunci.md`](.claude/skills/linkedin-cringe/references/annunci.md):
+a fake job ad is more dangerous than a fake post, because someone can answer it.
+
+`SKILL.md` also carries a **Distribution** section, measured on four published
+posts rather than guessed: reshares are the metric, not reactions; `C33` is the
+fuel (present in all three posts above 48k impressions, missing from the flat
+one); `C32` multiplies only when the planted error sits in the load-bearing
+sentence rather than in the image.
 
 Italian is the default, but cringe is not an Italian phenomenon: ask for
 another language and the skill **regenerates from the modules** instead of
@@ -107,7 +129,7 @@ too), or the pasted text, or a screenshot, and you get:
   5-6 annoying, 7-8 embarrassing, 9 unbearable, 10 legendary), with the
   event → moral gap in one line;
 - the **modules it hits**, each with the quote from the post that proves it;
-- the **register** (believable, parody, surreal deadpan, or *declared cringe*
+- the **register** (believable, parody, surreal deadpan, AI-SLOP, or *declared cringe*
   when there is a disclaimer line), **AI flavor** (low/medium/high),
   **lead-gen** and where it hides;
 - a one-line **verdict**, blastometer-style but about cringe;
@@ -127,8 +149,9 @@ stays in yours.
 
 The first four are invented posts from the generator's
 [`references/esempi.md`](.claude/skills/linkedin-cringe/references/esempi.md)
-(hence the "declared cringe" register); the last two are real English posts,
-anonymized.
+(hence the "declared cringe" register); the two English ones are real posts,
+anonymized; the last two show the other two registers the meter can label,
+surreal deadpan and AI-SLOP.
 
 | | | |
 |---|---|---|
@@ -136,6 +159,8 @@ anonymized.
 | 4/10, the sober humblebrag | 7/10, the broken coffee machine | 9/10, the pastry shop and the P.P.S. |
 | <img src="assets/cringiometro-10.png" width="300" alt="Cringe meter 10/10, legendary: C06 C09 C13 C22 C29 C24 C23"> | <img src="assets/cringiometro-en-7.png" width="300" alt="Cringe Meter 7/10, embarrassing: C30 C10 C33 C14 C08"> | <img src="assets/cringiometro-en-2.png" width="300" alt="Cringe Meter 2/10, harmless: C23"> |
 | 10/10, 5:17 am and the newborn | 7/10, real post: society collapses, then "hire me" | 2/10, real post: a product demo that admits being one |
+| <img src="assets/cringiometro-surreale-9.png" width="300" alt="Cringe meter 9/10, unbearable, surreal register: C37 C19 C04 C02 C13 C08 C30 C10"> | <img src="assets/cringiometro-slop-8.png" width="300" alt="Cringe meter 8/10, embarrassing, written by AI: C12 C08 C22 C13 C30 C10 C21 C23"> | |
+| 9/10, surreal register: the deer that gives you feedback instead of charging | 8/10, AI-SLOP: the post nobody wrote and nobody reread | |
 
 The last one is the control sample: an honest technical post must score low.
 The meter tells cringe apart from declared marketing, from opinions you
@@ -216,7 +241,7 @@ one *you* wrote in 2019 that still keeps you up at night. Open an
 [issue](https://github.com/matteobaccan/LinkedInCringe/issues) with the text
 (anonymized: no real names, no recognizable companies), tell us whether it
 was found in the wild or self-produced, and — if you dare — guess its level
-and modules. If it fits none of the 37, you may have just discovered `C38`.
+and modules. If it fits none of the 44, you may have just discovered `C45`.
 Accepted submissions land in [`community/`](community/).
 
 ## Thanks

@@ -80,6 +80,16 @@ il P.S. che vende il percorso arriva puntuale anche dentro il sogno.
 Vive dal livello 7 in su, il punto dolce è il 9. Regole, repertorio, effetti sui
 moduli e diagnosi degli errori: `surreale.md`.
 
+### AI-SLOP
+Il post non ha un autore. È stato generato, incollato e pubblicato senza rilettura, e
+rivendica un'esperienza personale che nessuno ha avuto. Le tre condizioni del cringe
+reggono, spostate: l'intenzione nascosta non è più vendere fingendo di non vendere, è
+firmare fingendo di aver scritto.
+
+È l'unico registro in cui la sezione *Non deve sembrare scritto da un'AI* di SKILL.md
+si applica al contrario. Vive dal livello 5 in su, il punto dolce è l'8, e si attiva
+solo su richiesta esplicita dell'utente: `slop.md`.
+
 ## Cosa tradisce la finzione (evitare in modalità credibile)
 
 - Ironia, ammicco, autoironia

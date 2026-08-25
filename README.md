@@ -32,9 +32,9 @@ Quando la invochi senza parametri, la skill ti fa quattro domande:
 | Domanda | Opzioni |
 |---|---|
 | **Livello di cringe** | 4 lieve · 7 imbarazzante · 9 insostenibile · 10 leggendario |
-| **Registro** | credibile (deve passare per vero) · parodico (satira dichiarata) · surreale deadpan (il mondo è impossibile, la voce non se ne accorge) |
+| **Registro** | credibile (deve passare per vero) · parodico (satira dichiarata) · surreale deadpan (il mondo è impossibile, la voce non se ne accorge) · AI-SLOP (il post non ha un autore, solo su richiesta esplicita) |
 | **Voce** | fuffaguru · founder/CEO · HR/recruiter · boomer con consiglio |
-| **Moduli cringe** | scelta multipla da un catalogo di 37 moduli (`C01`…`C37`) |
+| **Moduli cringe** | scelta multipla da un catalogo di 44 moduli (`C01`…`C44`) |
 
 Se invece scrivi già tutto nella richiesta (`post livello 9, credibile, tema
 smart working, moduli C19 e C02`), salta le domande e genera direttamente.
@@ -83,9 +83,28 @@ noioso** (mai chiedere al generatore "dreamlike" o "cinematic": la foto che
 sembra arte tradisce quanto la foto patinata). Il file contiene anche le frasi
 che uccidono il registro e una tabella di diagnosi per quando viene male.
 
+### Il registro AI-SLOP
+
+Il quarto valore sull'asse della credibilità, e l'unico che rovescia le regole
+di tutta la skill: **il post non ha un autore.** È stato generato, incollato e
+pubblicato senza rilettura, e rivendica un'esperienza personale che nessuno ha
+avuto. Trattini lunghi, triadi perfette, paragrafi tutti della stessa misura,
+"non è X, è Y" in serie, e gli asterischi del markdown rimasti nel testo perché
+LinkedIn non li interpreta.
+
+Non è un genere inventato: rilevazioni di giugno 2026 stimano il 41% dei post
+lunghi e il 30% dei commenti su LinkedIn come scritti da un modello, e dall'estate
+2026 la piattaforma ha un tasto per segnalarli ("sembra contenuto IA scadente").
+
+**Si attiva solo se lo chiedi tu, per nome.** La skill non lo sceglie mai da sola
+e non lo deduce: "scrivilo con l'AI" non è un'attivazione, perché ogni post di
+questa skill è scritto con l'AI e il default resta suonare umani. Regole,
+repertorio, la cicatrice del copia-incolla e i paletti stanno in
+[`references/slop.md`](.claude/skills/linkedin-cringe/references/slop.md).
+
 ### Il catalogo dei moduli
 
-37 moduli codificati in
+44 moduli codificati in
 [`references/moduli.md`](.claude/skills/linkedin-cringe/references/moduli.md),
 divisi in narrativi, retorici e formali. Alcuni esempi:
 
@@ -105,6 +124,16 @@ divisi in narrativi, retorici e formali. Alcuni esempi:
   a mettere il condizionatore in soggiorno
 - `C36` il rifiuto come flex, "sono io che scelgo i clienti"
 - `C37` onirico deadpan, il cervo che invece di caricarti ti dà un feedback
+- `C38` l'etimologia motivazionale, la parola inglese "intraducibile" che regge
+  un sermone sulla leadership
+- `C39` la scienza generica, "come ogni studio sul comportamento umano dimostra"
+- `C40` il nonnismo manageriale, la micro-crudeltà sul nuovo assunto raccontata
+  con soddisfazione, "penso abbia capito..."
+- `C41` il confronto a due colonne, due persone inventate e una domanda retorica
+- `C42` il titolo negato, "co-founder non è un titolo, è una condizione"
+- `C43` il flex rinnegato, la morale contro l'inseguire lo status, e in fondo la
+  foto del Rolex
+- `C44` il figlio-content, l'idea del figlio pubblicata col permesso dichiarato
 
 `C32` e `C33` sono nati dall'analisi sul campo: il primo dall'osservazione che
 la sedia rimessa a posto *prima di alzarsi* ha generato thread interi, il
@@ -113,7 +142,9 @@ serissime sulla RAL. Chi ti corregge ti ha creduto. `C34`-`C36` vengono
 dall'osservazione del cringe che LinkedIn produce ogni giorno, e che qualcuno
 ha la pazienza di raccogliere (vedi i ringraziamenti in fondo). `C37` è nato
 invece usando la skill: da un post surreale su un fatto di cronaca è stato
-ricavato il registro descritto in `surreale.md`.
+ricavato il registro descritto in `surreale.md`. `C38`-`C44` vengono da un
+secondo giro di osservazione sulle stesse community, su un campione di sessanta
+post raccolti in tre settimane.
 
 ### Lingue
 
@@ -143,11 +174,15 @@ lezione no."), così chi scopre lo scherzo non butta via anche il dato.
 
 ### Niente sapore-AI
 
-Un post che profuma di modello linguistico non è credibile come cringe umano.
-La skill vieta in output il trattino lungo, i connettivi levigati, le triadi
-perfette, i paragrafi tutti della stessa misura e il finale riassuntivo; e
-impone almeno un dettaglio concreto inutile, un ritmo irregolare e una piccola
-sbavatura.
+Un post che profuma di modello linguistico non è credibile come cringe umano,
+e da agosto 2026 ha anche un tasto di segnalazione dedicato sotto. La skill
+vieta in output il trattino lungo, i connettivi levigati, le triadi perfette,
+i paragrafi tutti della stessa misura e il finale riassuntivo; e impone almeno
+un dettaglio concreto inutile, un ritmo irregolare e una piccola sbavatura.
+
+Le eccezioni sono due e sono entrambe opt-in: il modulo `C12`, che ritrae
+l'umano che copia-incolla dall'AI senza accorgersene, e il registro AI-SLOP,
+in cui quella lista di divieti si legge al contrario.
 
 ### Come si tara il livello
 
@@ -198,6 +233,41 @@ ora contiene le regole per non farsi sgamare dalla foto (o per farsi sgamare
 apposta, ai livelli alti), e a ogni consegna **propone anche il prompt pronto
 per generare l'immagine del post**: estetica da foto di smartphone, niente testo
 in scena, luce e stagione coerenti con quello che il post racconta.
+
+### Gli annunci di lavoro
+
+Tutti i moduli descrivono post, ma su una community di settore un cringe su
+cinque è un'offerta di lavoro, che è un genere con regole sue. La skill sa
+scriverne tre famiglie: l'annuncio-muro (dodici requisiti tecnici e in fondo,
+piccolo, l'apprendistato), l'annuncio-famiglia (nessun requisito, molto
+sentimento, il compenso mai nominato) e l'annuncio in inglese non tradotto.
+Le regole stanno in
+[`references/annunci.md`](.claude/skills/linkedin-cringe/references/annunci.md),
+compreso il paletto più severo del repo: un annuncio finto è più pericoloso di
+un post finto, perché qualcuno ci può rispondere, quindi la riga di disclaimer
+sta **dentro** al testo e non si generano mai contatti, form o link di
+candidatura, nemmeno finti.
+
+### Cosa fa girare un post
+
+Sezione nuova di `SKILL.md`, ricavata dai numeri di quattro post pubblicati ad
+agosto 2026 e non da impressioni personali. Vale solo se pubblichi davvero e
+vuoi che il post giri: se ti serve un esercizio, si ignora.
+
+- **La metrica è la diffusione, non la reazione.** I due post con il tasso di
+  commento più alto sono anche quelli che hanno girato meno. Quello che ha fatto
+  tre volte le impressioni degli altri è quello ridiffuso 26 volte contro 2 e 4.
+- **`C33` è la benzina.** Presente in tutti e tre i post sopra le 48mila
+  impressioni, assente nell'unico rimasto piatto. In tutti e tre, il commento
+  più votato del thread è la correzione indignata del nervo scoperto.
+- **`C32` è il moltiplicatore, ma solo se sta nella frase portante.** Errore nel
+  testo: 26 reazioni sul commento che lo becca. Stesso modulo spostato nella
+  foto: 1 o 2.
+- **Le prime due righe** sono l'unica parte ridiffondibile da sola, quindi ci va
+  la tesi, non l'annuncio della tesi.
+- **Registro e distribuzione sono obiettivi diversi**, e ogni tanto si
+  contraddicono: il surreale di livello 7 è la forma più pulita del registro e
+  la meno diffusa dall'algoritmo.
 
 ## La skill di analisi
 
@@ -254,7 +324,7 @@ Dai a `linkedin-cringe-meter` l'URL di un post LinkedIn (anche uno short link
   con lo scarto evento → morale in una riga;
 - **i ganci presi**: i moduli del catalogo rilevati, ciascuno con la citazione
   del post che lo prova;
-- il **registro** (credibile, parodico, surreale deadpan, o *cringe dichiarato*
+- il **registro** (credibile, parodico, surreale deadpan, AI-SLOP, o *cringe dichiarato*
   se c'è la riga di disclaimer), il **sapore-AI** (bassa/media/alta), la
   **lead-gen** e dove si nasconde;
 - **il verdetto**: una frase secca, stile blastometro ma in tema cringe;
@@ -271,10 +341,11 @@ quella lingua. Il report resta nella tua.
 
 ### Galleria
 
-I primi quattro sono post inventati, presi da
+Le prime quattro valutano post inventati, presi da
 [`references/esempi.md`](.claude/skills/linkedin-cringe/references/esempi.md)
-del generatore (per questo il registro è "cringe dichiarato"); gli ultimi due
-sono post reali in inglese, anonimizzati.
+del generatore (per questo il registro è "cringe dichiarato"); le due in inglese
+sono post reali, anonimizzati; le ultime due mostrano gli altri due registri che
+il Cringiometro sa etichettare, il surreale deadpan e l'AI-SLOP.
 
 | | | |
 |---|---|---|
@@ -282,6 +353,8 @@ sono post reali in inglese, anonimizzati.
 | 4/10, l'humblebrag sobrio | 7/10, la macchinetta del caffè | 9/10, la pasticceria e il P.P.S. |
 | <img src="assets/cringiometro-10.png" width="300" alt="Cringiometro 10/10, leggendario: C06 C09 C13 C22 C29 C24 C23"> | <img src="assets/cringiometro-en-7.png" width="300" alt="Cringe Meter 7/10, embarrassing: C30 C10 C33 C14 C08"> | <img src="assets/cringiometro-en-2.png" width="300" alt="Cringe Meter 2/10, harmless: C23"> |
 | 10/10, le 5:17 e la neonata | 7/10 in inglese, post reale: il collasso della società e poi "hire me" | 2/10 in inglese, post reale: una demo di prodotto che ammette di esserlo |
+| <img src="assets/cringiometro-surreale-9.png" width="300" alt="Cringiometro 9/10, insostenibile, registro surreale: C37 C19 C04 C02 C13 C08 C30 C10"> | <img src="assets/cringiometro-slop-8.png" width="300" alt="Cringiometro 8/10, imbarazzante, scritto dall'AI: C12 C08 C22 C13 C30 C10 C21 C23"> | |
+| 9/10, registro surreale: il cervo che invece di caricarti ti dà un feedback | 8/10, AI-SLOP: il post che nessuno ha scritto e nessuno ha riletto | |
 
 L'ultimo è il campione di controllo: un post tecnico onesto deve uscire basso.
 Il Cringiometro distingue il cringe dal marketing dichiarato, dall'opinione
@@ -313,9 +386,11 @@ file e si ferma lì.
 │   ├── SKILL.md                    flusso, domande, regole, paletti
 │   └── references/
 │       ├── tassonomia.md           definizione del cringe, scala 1-10
-│       ├── moduli.md               catalogo dei 37 moduli C01-C37
+│       ├── moduli.md               catalogo dei 44 moduli C01-C44
 │       ├── attualita.md            il gancio reale: cringe ispirato ai fatti
 │       ├── surreale.md             il registro deadpan: regole, repertorio, diagnosi
+│       ├── slop.md                 il registro AI-SLOP: attivazione, regole, repertorio
+│       ├── annunci.md              l'annuncio di lavoro: le tre famiglie e i paletti
 │       ├── lessico.md              itanglese, formule, hashtag, altre lingue
 │       └── esempi.md               post calibrati sui livelli 4, 7, 9, 10
 ├── linkedin-cringe-analytics/      analisi
@@ -461,7 +536,7 @@ del post, o direttamente una PR su `esempi.md`. Regole di ingaggio:
   il cringe autoprodotto consapevole è ricerca);
 - se vi va, azzardate **livello 1-10 e moduli** che ci vedete, o passatelo
   prima al Cringiometro e allegate l'immagine: se il post non rientra in
-  nessuno dei 37, potreste aver appena scoperto il C38.
+  nessuno dei 44, potreste aver appena scoperto il C45.
 
 I post accettati finiscono in [`community/`](community/), i migliori negli
 esempi della skill, e i pattern nuovi diventano moduli del catalogo. Il

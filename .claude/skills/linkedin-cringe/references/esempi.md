@@ -10,6 +10,9 @@ Unica eccezione: le **notizie** citate nei due esempi con gancio reale sono vere
 riportate con cifre, date e luoghi esatti. È la regola di `attualita.md`, il fatto resta
 il fatto. Tutto quello che il post ci costruisce sopra è inventato.
 
+Seconda eccezione: l'esempio in registro **AI-SLOP** in fondo viola di proposito le
+regole di stile del repo, trattini lunghi compresi. È il punto di quel registro.
+
 ---
 
 ## Livello 4: credibile
@@ -348,3 +351,84 @@ dieci, sarebbe rumore.
 all'alba, fotografata storta da uno smartphone, con la sagoma sfocata di un cervo sulla
 riva opposta. Anomalia unica, stile noioso: il prompt non conteneva la parola
 "surreale".
+
+---
+
+## Livello 8: AI-SLOP
+
+**Voce:** nessuna, ed e' il punto · **Moduli:** C12 (sempre, non conta) + C08 + C22 +
+C13 rovesciato + C21 regolarizzato + C10 + C30 + C23
+
+> **Il futuro del lavoro non è una tecnologia. È una mentalità.**
+>
+> In un mondo sempre più veloce e interconnesso, molti leader si stanno ponendo la stessa domanda: come restare rilevanti?
+>
+> Recentemente mi sono trovato a riflettere su questo tema, dopo una conversazione con un cliente che mi ha lasciato qualcosa di importante.
+>
+> Mi ha detto una frase che non dimenticherò: "Le persone non temono il cambiamento — temono di essere lasciate indietro".
+>
+> Ed è proprio qui che entra in gioco il vero ruolo della leadership moderna.
+>
+> Non si tratta solo di adottare nuovi strumenti, ma di costruire fiducia, di coltivare visione e di generare significato.
+>
+> **Ecco cosa ho imparato:**
+>
+> ✅ La tecnologia amplifica la cultura, non la sostituisce
+> ✅ La formazione continua è un investimento, non un costo
+> ✅ L'ascolto è la competenza più sottovalutata del nostro tempo
+>
+> Il 90% dei leader che incontro condivide questa visione. Eppure solo una minoranza la mette in pratica ogni giorno.
+>
+> È importante notare che non esiste una formula magica — esiste però un metodo, e quel metodo parte sempre dalle persone.
+>
+> Che si tratti di un team di due persone o di una multinazionale, il principio resta lo stesso.
+>
+> Non è innovazione. È evoluzione.
+>
+> Non è un percorso semplice. Ma è un percorso necessario.
+>
+> In conclusione, il vero vantaggio competitivo non sarà l'intelligenza artificiale. Sarà la nostra capacità di rimanere profondamente umani in un contesto sempre più automatizzato. Ascoltare. Adattarsi. Crescere.
+>
+> E voi, cosa ne pensate? Fatemelo sapere nei commenti! 👇
+>
+> P.S. Se questo post ti è stato utile, condividilo con la tua rete 🔄 Approfondimento nel primo commento.
+>
+> #Leadership #Innovazione #Crescita #Mindset
+>
+> Questo post è finto, ed è stato scritto apposta perché sembri scritto da una macchina. Questa riga no.
+
+**Attenzione, questo esempio viola di proposito le regole del resto del repo.** È
+l'unico posto in cui compaiono i trattini lunghi, ce ne sono due, ed è voluto. Tutta
+la sezione *Non deve sembrare scritto da un'AI* di `SKILL.md` qui si legge al
+contrario: quella lista di divieti è la lista della spesa. Il registro si attiva solo
+se l'utente lo chiede per nome, mai per iniziativa della skill. Vedi `slop.md`.
+
+**Perché non è credibile:** non perché sia esagerato, ma perché è vuoto. Non c'è un
+orario, un oggetto, un luogo, un nome. Il cliente non ha un settore, la conversazione
+non ha un quando, la frase che "non dimenticherò" è un proverbio. Il registro credibile
+chiede "le 5:41" e "la sedia di plastica bianca": qui non resta niente in mano al
+lettore, ed è esattamente la diagnosi da applicare quando un post slop viene male
+(se il lettore ricorda un dettaglio, ce n'era uno di troppo).
+
+**Perché non è parodico:** non c'è nessuna battuta e niente è costruito per far ridere.
+Un post parodico ammicca; questo non ha nessuno dietro con cui ammiccare.
+
+**Perché è un 8 e non un 9:** manca la cicatrice del copia-incolla, cioè la riga che il
+modello aveva scritto per chi lo interrogava ("Certo! Ecco un post per LinkedIn dal tono
+professionale e coinvolgente:") rimasta in cima al testo. Da 9 in su si accende, e a 10
+si aggiunge il segnaposto mai compilato.
+
+**I tell, in ordine di riconoscibilità:** gli asterischi del grassetto rimasti nel testo
+perché LinkedIn non li interpreta; i due trattini lunghi; il paragrafo finale che
+riassume quello appena detto; la triade a chiudere ("Ascoltare. Adattarsi. Crescere.");
+tre "non è X, è Y" di cui uno in cui X e Y sono la stessa cosa ("non è innovazione,
+è evoluzione"); i paragrafi tutti della stessa misura; e nessuna sbavatura, nessuna
+ripetizione, nessun anglicismo storpiato.
+
+**`C13` rovesciato:** "il 90% dei leader che incontro". Nel registro credibile sarebbe
+il 78%, o 1.247 profili: la precisione sospetta è un'impronta umana. Lo slop arrotonda,
+e l'arrotondamento è la firma del genere. Vale anche sul gancio reale: dove credibile
+scrive "850mila", slop scrive "quasi un milione", senza mai inventare la cifra.
+
+**Il disclaimer** non spiega niente e non si scusa. Dice che il post è finto e che quella
+riga è l'unica scritta da una persona, che nel registro è anche l'unica cosa vera.

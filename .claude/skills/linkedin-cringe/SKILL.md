@@ -43,6 +43,9 @@ Altrimenti mostra prima il **menu dei moduli**: elenco compatto, codice + nome, 
 - `Surreale deadpan`: il mondo raccontato è impossibile e la voce non se ne accorge.
   Né credibile né parodico, nessuna battuta. Vive dal livello 7 in su, il punto dolce
   è il 9
+- `AI-SLOP`: il post non ha un autore, è stato generato e incollato senza rileggerlo.
+  Ribalta la regola anti-AI di questa skill. Non viene mai scelto dalla skill: solo
+  dall'utente, qui o per nome. Vive dal livello 5 in su, il punto dolce è l'8
 
 **D3. Voce** (`header: "Voce"`)
 - `Fuffaguru mindset`: coach/consulente che vende crescita personale
@@ -182,9 +185,20 @@ umano è tutto il punto. Questa regola vale sempre, a qualunque livello e in qua
 - Una piccola sbavatura: una virgola di troppo, un anglicismo storpiato, una ripetizione.
 - Chiudere di colpo, senza tirare le somme.
 
-Il modulo `C12` (sapore-AI) è l'unica eccezione, ed è opt-in: si usa quando si vuole
-ritrarre *l'umano che copia-incolla dall'AI senza accorgersene*. Anche lì i cliché vanno
-inseriti dentro un testo che per il resto suona umano, mai al posto suo.
+Ci sono due eccezioni, entrambe opt-in, e nessuna delle due si attiva da sola:
+
+- il modulo `C12` (sapore-AI), che ritrae *l'umano che copia-incolla dall'AI senza
+  accorgersene*: i cliché vanno inseriti dentro un testo che per il resto suona umano,
+  mai al posto suo;
+- il registro **AI-SLOP**, in cui la lista qui sopra si legge al contrario e i divieti
+  diventano obblighi. Si attiva solo su richiesta esplicita dell'utente: regole,
+  repertorio e condizioni di attivazione in `references/slop.md`.
+
+Perché la regola conta più di prima: da agosto 2026 LinkedIn ha un tasto per segnalare
+i contenuti che sembrano generati ("sembra contenuto IA scadente"), e rilevazioni di
+giugno 2026 stimano il 41% dei post lunghi e il 30% dei commenti come scritti da un
+modello. Un post che profuma di modello non è più solo poco credibile: ha una voce di
+segnalazione dedicata sotto.
 
 ## Immagini
 
@@ -213,6 +227,10 @@ testo, fotografata malissimo come si fotografa una cosa qualunque. Mai chiedere 
 generatore "surreal, dreamlike, ethereal, cinematic, David Lynch style": la foto che
 sembra arte tradisce quanto la foto patinata. Dettagli in `references/surreale.md`.
 
+In registro AI-SLOP la regola si ribalta del tutto e va dichiarato all'utente: testo
+impresso, insegne storpiate, luce da render e sorrisi da stock sono il costume di scena,
+non un difetto. Dettagli in `references/slop.md`.
+
 ### Il prompt d'immagine
 
 In consegna la skill propone sempre un prompt pronto per un generatore di immagini.
@@ -238,6 +256,44 @@ Regole di costruzione:
 - In registro surreale l'anomalia è obbligatoria, ma una sola, e va dichiarata:
   l'oggetto-esca impossibile ripreso come si riprende una tazza.
 - Chiudi il prompt con l'aspect ratio (4:5 o 1:1, i formati del feed).
+
+## Distribuzione
+
+Vale quando l'utente pubblica davvero e vuole che il post giri. Se il post serve come
+esercizio o come collaudo, questa sezione si ignora: non tutti i post buoni sono post
+diffusi, e i due obiettivi si contraddicono piu' spesso di quanto sembri.
+
+**La metrica e' la diffusione, non la reazione.** Su quattro post pubblicati ad agosto
+2026, i due che facevano piu' commenti in proporzione alle impressioni sono anche quelli
+che hanno girato meno. Quello che ha fatto tre volte le impressioni degli altri e' quello
+ridiffuso 26 volte contro 2 e 4. Commentare vuol dire "non sono d'accordo" e resta dentro
+al thread; ridiffondere vuol dire "guardate qui" e porta il post in una rete nuova.
+
+**La coppia che produce diffusioni e' C33 piu' C32.**
+
+- `C33` il nervo scoperto da' a una categoria professionale un motivo per intervenire.
+  Presente in tutti e tre i post sopra le 48mila impressioni, assente nell'unico piatto.
+- `C32` l'errore piantato da' a chi legge attentamente qualcosa da mostrare agli altri,
+  ma solo se sta nella frase portante del testo e non nell'immagine.
+
+Senza almeno C33, un post di livello 7 ben costruito puo' non uscire dal primo campione.
+
+**Le prime due righe devono essere una tesi completa e citabile.** Stanno sopra
+l'"...altro" e sono l'unica parte che si puo' ridiffondere da sola. Un gancio che
+annuncia qualcosa senza dirla ("ieri ho letto un numero e ho spento il telefono") spreca
+l'unico spazio che conta: il numero, o l'affermazione, vanno nella prima riga.
+
+**Il tema deve stare nella nicchia del profilo.** La prima ondata va a chi ha gia'
+interagito con quell'autore. Un tema fuori nicchia parte in salita anche se il post e'
+scritto meglio.
+
+**Cosa invece non e' risultato vero**, e va detto perche' il folklore dice il contrario:
+il link nel corpo del post non affossa la portata. Il post piu' diffuso del campione ha
+un link accorciato dentro al testo e ha fatto 152mila impressioni.
+
+**L'orario:** il campione e' troppo piccolo per una regola. I tre post che hanno girato
+sono usciti alle 18:07, alle 05:45 e alle 06:00, quello piatto alle 11:24. Si puo' dire
+che la meta' mattina non e' risultata una buona finestra, non molto di piu'.
 
 ## Riga finale di disclaimer
 
