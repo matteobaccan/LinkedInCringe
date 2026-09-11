@@ -12,7 +12,8 @@ nasce invece da un uso della skill: un post surreale su un fatto di cronaca
 (agosto 2026), da cui è stato ricavato il registro descritto in `surreale.md`.
 I moduli C38-C44 vengono da un secondo giro di osservazione sulle stesse
 community (agosto 2026), su un campione di sessanta post raccolti fra il 30
-luglio e il 25 agosto.
+luglio e il 25 agosto. I moduli C45-C47 vengono da un terzo giro (settembre
+2026), su un campione di cinquanta post recenti.
 
 ---
 
@@ -315,6 +316,27 @@ controllano); la sproporzione non viene mai riconosciuta dalla voce. In registro
 credibile, niente tragedie con vittime nominate: dati aggregati e annuali.
 **Marcatore:** la parola "basterebbe".
 
+### C45: Il flex da gamification
+Uno screenshot generato dalla piattaforma stessa — non dalla vita dell'autore —
+usato come prova di carattere.
+**Meccanismo:** la piattaforma produce di suo schermate celebrative (streak di
+un gioco integrato, un badge, un traguardo di "attività"): l'autore le
+ripubblica come se fossero la prova di una virtù personale (costanza,
+disciplina, crescita), spesso agganciandole a una data simbolica (il
+compleanno, il capodanno, un anniversario di iscrizione).
+**Costruzione tipo:** una riga di celebrazione personale + lo screenshot del
+traguardo automatico + una massima da poster motivazionale che lo commenta
+("La costanza paga sempre. 🚀").
+**Materiali:** streak di giochi integrati nella piattaforma, badge "Top
+Voice"/"Creator", certificati di corsi completati, notifiche di anniversario
+di iscrizione, contatori di "settimane consecutive attivo".
+**Marcatore:** l'oggetto della prova non è mai stato scelto dall'autore — è un
+contatore che il prodotto tiene comunque, per chiunque lo usi — eppure viene
+raccontato come un risultato conquistato con merito.
+**Regole:** il traguardo citato dev'essere plausibile (un numero tondo o
+quasi) e riferito a una funzione automatica della piattaforma, mai a
+un'attività lavorativa reale, altrimenti sconfina in C13.
+
 ### C11: Umiltà ostentata
 "Onorato e umilmente emozionato di annunciare…", "Non lo dico per vantarmi, ma",
 "Non merito questo riconoscimento, lo dedico a…".
@@ -349,6 +371,25 @@ gradini, vista da un'altra parte e ripostata come propria, con i livelli numerat
 zero. "La maggior parte delle persone resta bloccata tra zero e due."
 **Errore da evitare:** scegliere una parola che in italiano davvero non c'è. Il modulo
 vive sul fatto che la traduzione esiste ed è banale.
+
+### C46: Il neologismo ribattezzante
+Un termine composto inventato lì per lì per rivestire di innovazione qualcosa
+che esiste da sempre.
+**Meccanismo:** è lo specchio rovesciato di C38: lì la parola inglese esiste
+davvero e viene dichiarata intraducibile; qui la parola non esiste affatto, la
+si conia sul momento (spesso un mix itanglese) e la si presenta come se fosse
+già un termine tecnico consolidato, con tanto di virgolette come marchio.
+**Costruzione tipo:** descrizione di una cosa banale o già vista + "Da qui il
+termine '[neologismo]'" + una domanda retorica che chiede al lettore di
+stupirsi ("Vuoi mettere [cosa banale] e [nuovo termine]?").
+**Materiali:** postazioni di lavoro in luoghi insoliti ribattezzate "[luogo]
+working", una riunione ribattezzata "sync", una pausa ribattezzata "reset
+consapevole", un elenco della spesa ribattezzato "framework".
+**Marcatore:** il neologismo compare fra virgolette esattamente una volta,
+come se da lì in poi entrasse nel vocabolario comune.
+**Regole:** la cosa descritta dev'essere reale e verificabile (un servizio, un
+prodotto, un luogo) — è la sproporzione fra il fatto minimo e l'etichetta
+roboante a reggere il modulo, non l'invenzione del fatto stesso.
 
 ### C39: La scienza generica
 L'autorità vaga al posto della fonte.
@@ -419,6 +460,26 @@ in coda o nell'intestazione del profilo.
 **Costruzione tipo:** post intero sulla lentezza, la gratitudine o l'umiltà + P.S. finale
 che apre "le ultime N sessioni" di un percorso a pagamento.
 **Marcatore:** il P.S. smentisce tutto il post e l'autore non se ne accorge.
+
+### C47: Il cliffhanger da funnel esterno
+Il post costruisce una rivelazione e la trattiene esplicitamente, rimandando a
+un canale esterno per conoscerla.
+**Meccanismo:** a differenza di C30 (dove il contrasto è fra il tono
+disinteressato del testo e il P.S. commerciale), qui non c'è contraddizione di
+tono: l'autore dichiara apertamente che sta trattenendo l'informazione, e la
+sottrazione stessa è il gancio.
+**Costruzione tipo:** un antefatto raccontato quasi per intero + una frase che
+interrompe la rivelazione sul più bello ("non lo dico qui, perché è il punto
+di partenza del numero N della newsletter" / "ne parlo nel video qui sotto") +
+il link o l'embed del canale esterno.
+**Materiali:** una newsletter numerata, un video linkato in coda, un podcast,
+un webinar "di domani".
+**Marcatore:** la frase che nega la rivelazione contiene sempre una
+giustificazione di cornice ("perché merita più spazio di un post", "perché lì
+posso spiegarlo con calma"), mai il vero motivo (portare traffico altrove).
+**Regole:** il testo del post deve reggersi comunque da solo come racconto
+compiuto fino al punto di sospensione; se il post è incomprensibile senza
+cliccare il link, il modulo scade in spam puro e perde la cornice cringe.
 
 ### C31: Tic tipografici
 MAIUSCOLO per enfasi su una parola sola. Puntini di sospensione a tre o quattro.

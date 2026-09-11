@@ -1,6 +1,6 @@
 ---
 name: linkedin-cringe
-description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), registro (credibile / parodico / surreale deadpan alla Lynch) e moduli cringe scelti da un catalogo di 37, con la possibilità di partire da un fatto reale (una notizia data dall'utente o cercata dalla skill). Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, un post "ispirato all'attualità", un post surreale o onirico "alla David Lynch", oppure vuole parodiare lo stile LinkedIn.
+description: Genera post LinkedIn cringe (italiano di default, ma funziona in qualunque lingua), calibrati su livello di cringe (1-10), registro (credibile / parodico / surreale deadpan alla Lynch) e moduli cringe scelti da un catalogo di 47, con la possibilità di partire da un fatto reale (una notizia data dall'utente o cercata dalla skill). Usala quando l'utente chiede un post LinkedIn cringe, motivazionale, da fuffaguru, da founder, da HR o da boomer, un post "ispirato all'attualità", un post surreale o onirico "alla David Lynch", oppure vuole parodiare lo stile LinkedIn.
 ---
 
 # LinkedIn Cringe: generatore di post
